@@ -4,11 +4,11 @@ body {
 }
 
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     width: 8px;
 }
 
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb {
     background-color: #000;
     border-radius: 8px;
 }
@@ -35,6 +35,29 @@ header {
     right: 5%;
     cursor: pointer;
 }
+
+
+
+/* 반응형 */
+@media (max-width:1024px) {
+    .header .gnb_btn .img img {
+        right: 8%;
+    }
+}
+
+@media (max-width:480px) {
+    .header .gnb_btn .img img {
+        width: 35px;
+        right: 6%;
+    }
+}
+
+@media (max-width:365px) {
+    .header .gnb_btn .img img {
+        width: 20px;
+    }
+}
+
 
 
 
@@ -130,6 +153,62 @@ header {
 }
 
 
+/* 반응형 */
+@media (max-width:1024px) {
+    .toggle_box .gnb_box .gnb_list {
+        font-size: 80px;
+    }
+
+    .toggle_box .gnb_box {
+        left: 10%;
+    }
+}
+
+@media (max-width:768px) {
+    .toggle_box .gnb_box .gnb_list {
+        font-size: 60px;
+    }
+
+    .toggle_box .gnb_box {
+        left: 5%;
+    }
+}
+
+@media (max-width:480px) {
+    .toggle_box .gnb_box{
+        top: 40%;
+        left: 0;
+    }
+    .toggle_box .gnb_box .gnb_list {
+        font-size: 40px;
+    }
+    .gnb_box .gnb_list a{
+        margin-bottom: 20px;
+    }
+    .toggle_box img{
+        width: 35px;
+    }
+}
+
+@media (max-width:365px) {
+    .toggle_box .gnb_box{
+        transform:translate(25%, -70%);
+    }
+    .toggle_box .gnb_box .gnb_list{
+        font-size: 32px;
+    }
+    .gnb_box .gnb_list a{
+        margin-bottom: 10px;
+    }
+    
+    .toggle_box img{
+        width: 20px;
+    }
+}
+
+
+
+
 /* 푸터 */
 
 footer {
@@ -176,7 +255,6 @@ footer {
 }
 
 
-
 .footer .contact .top_menu {
     display: flex;
     justify-content: flex-end;
@@ -205,4 +283,104 @@ footer {
 .footer .email p,
 .footer .github p {
     padding: 5% 0;
+}
+
+
+/* 반응형 */
+@media (max-width:1024px) {
+    .footer .contact .contact_box {
+        height: 145px;
+    }
+
+    .footer .contact .contact_box .contact_hover>div {
+        font-size: 150px;
+    }
+
+    .footer .contact .top_menu p {
+        font-size: 30px;
+    }
+
+    .footer .email,
+    .footer .github {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:768px) {
+    .footer {
+        margin: 0 10px;
+    }
+
+    .footer .contact .contact_box .contact_hover>div {
+        font-size: 120px;
+    }
+
+    .footer .contact .top_menu p {
+        font-size: 24px;
+    }
+
+    .footer .email,
+    .footer .github {
+        font-size: 24px;
+    }
+}
+
+@media (max-width:480px) {
+    .footer .contact .contact_box {
+        height: 100px;
+    }
+
+    .footer .contact .top_menu {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .footer .contact .top_menu img {
+        width: 15px;
+    }
+
+    .footer .contact .top_menu p {
+        font-size: 20px;
+    }
+
+    .footer .contact .contact_box .contact_hover>div {
+        font-size: 80px;
+    }
+
+    .footer .email,
+    .footer .github {
+        flex-direction: column;
+        align-items: start;
+        gap: 0;
+        font-size: 24px;
+    }
+
+    .footer .email > p,
+    .footer .github > p{
+        font-size: 32px;
+    }
+    .footer .email > a,
+    .footer .github > a {
+        padding-bottom: 5%;
+    }
+    .footer .email > .none_media,
+    .footer .github > .none_media {
+        display: none;
+    }
+}
+@media (max-width:365px) {
+    .footer .contact .contact_box {
+        height: 70px;
+    }
+    .footer .contact .contact_box .contact_hover>div {
+        font-size: 60px;
+    }
+    .footer .email  p,
+    .footer .github  p{
+        font-size: 20px;
+    }
+    .footer .email > p,
+    .footer .github > p{
+        font-size: 24px;
+    }
 }

@@ -1,0 +1,208 @@
+body {
+    font-family: 'Chamber-R';
+    overflow-x: hidden;
+}
+
+
+body::-webkit-scrollbar{
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #000;
+    border-radius: 8px;
+}
+
+
+/* 헤더 */
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.header {
+    margin: 0 80px;
+    position: fixed;
+}
+
+
+.header .gnb_btn .img img {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+}
+
+
+
+
+/* 토글 버튼 */
+
+
+.toggle_gnb {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    transition: .5s;
+}
+
+.toggle_box {
+    width: 100vw;
+    height: 100vh;
+    background-color: #9a9a9a;
+    position: relative;
+}
+
+.toggle_box .gnb_box {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(50%, -50%);
+}
+
+.toggle_box .gnb_box .gnb_list {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    font-family: 'Play-R';
+    font-size: 120px;
+}
+
+
+.gnb_box .gnb_list a {
+    text-decoration: none;
+    position: relative;
+    margin-bottom: 50px;
+    transition: all .2s;
+    overflow: hidden;
+    line-height: 120%;
+    color: #fff;
+}
+
+
+.gnb_box .gnb_list a::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 99;
+    transition: all .4s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.gnb_box .gnb_list a:hover::before {
+    left: 100%;
+}
+
+.gnb_box .gnb_list a::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    margin-top: -2px;
+    left: 100%;
+    width: 100%;
+    height: 4px;
+    background: #fff;
+    transition: all .3s;
+    transition-delay: .4s;
+}
+
+.gnb_box .gnb_list a:hover::after {
+    left: 0%;
+}
+
+.toggle_box .img {
+    position: absolute;
+    top: 5%;
+    right: 6%;
+    cursor: pointer;
+}
+
+.toggle_gnb.active {
+    top: 0;
+    transition: .5s;
+    z-index: 10;
+}
+
+
+/* 푸터 */
+
+footer {
+    font-family: 'Mango';
+    margin-top: 20%;
+}
+
+.footer {
+    margin: 0 80px;
+}
+
+.footer .contact {
+    margin: 0 0 40px;
+}
+
+.footer .contact .contact_box {
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer .contact .contact_box .contact_hover:hover .none_hover {
+    top: -100%;
+    transition: .5s;
+}
+
+.footer .contact .contact_box .contact_hover:hover .hover {
+    top: 0;
+    transition: .5s;
+}
+
+.footer .contact .contact_box .contact_hover>div {
+    display: flex;
+    font-size: 240px;
+    position: absolute;
+}
+
+.footer .contact .contact_box .contact_hover .none_hover {
+    top: 0;
+}
+
+.footer .contact .contact_box .contact_hover .hover {
+    top: 100%
+}
+
+
+
+.footer .contact .top_menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer .contact .top_menu p {
+    font-size: 40px;
+}
+
+.footer .email,
+.footer .github {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 100px;
+    font-size: 40px;
+    border-top: 1px solid #404040;
+}
+
+.footer .github {
+    gap: 170px;
+}
+
+.footer .email p,
+.footer .github p {
+    padding: 5% 0;
+}

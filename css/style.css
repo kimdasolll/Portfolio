@@ -52,7 +52,7 @@
 
 @media (max-width:480px) {
     .intro {
-        font-size: 75px;
+        font-size: 64px;
     }
 
     .intro_box {
@@ -62,7 +62,7 @@
 
 @media (max-width:365px) {
     .intro {
-        font-size: 48px;
+        font-size: 42px;
     }
 }
 
@@ -256,6 +256,7 @@
     .skills h2 {
         font-size: 32px;
     }
+
     .skills .skills_box .skills_list .skills_text img {
         width: 40px;
     }
@@ -284,12 +285,36 @@
 }
 
 .atwosome .title {
-    text-align: center;
-    font-size: 64px;
     margin-top: 80px;
+    margin-left: 40px;
     position: sticky;
     top: 80px;
 }
+
+.atwosome .title h2 {
+    text-align: center;
+    font-size: 64px;
+    padding: 10px 60px;
+}
+
+.atwosome .title p {
+    font-family: 'Mango';
+    font-size: 30px;
+}
+
+.atwosome .title>a>p {
+    font-size: 24px;
+    margin: 30px 60px;
+    text-decoration: underline;
+}
+
+.atwosome .title>p {
+    font-family: 'Mango';
+    font-size: 24px;
+    padding: 10px 60px;
+    line-height: 40px;
+}
+
 
 .atwosome img {
     margin-bottom: 20px;
@@ -304,6 +329,20 @@
 
     .atwosome .title {
         font-size: 50px;
+        margin-left: 15px;
+    }
+
+    .atwosome .title>a>p {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .atwosome .title>p {
+        font-size: 20px;
+    }
+
+    .atwosome .title>p br {
+        display: none;
     }
 }
 
@@ -314,6 +353,7 @@
 
     .atwosome .title {
         font-size: 42px;
+        margin-left: 5px;
     }
 }
 
@@ -329,6 +369,14 @@
         position: inherit;
         order: -1;
         margin-bottom: 20%;
+        margin-left: 0;
+    }
+    .atwosome .title>a>p {
+        font-size: 16px;
+    }
+
+    .atwosome .title>p {
+        font-size: 18px;
     }
 }
 
@@ -446,11 +494,35 @@
 }
 
 .ganeshi .title {
-    text-align: center;
-    font-size: 64px;
     margin-top: 80px;
+    margin-left: 40px;
     position: sticky;
     top: 80px;
+}
+
+
+.ganeshi .title h2 {
+    text-align: center;
+    font-size: 64px;
+    padding: 10px 60px;
+}
+
+.ganeshi .title p {
+    font-family: 'Mango';
+    font-size: 30px;
+}
+
+.ganeshi .title>a>p {
+    font-size: 24px;
+    margin: 30px 60px;
+    text-decoration: underline;
+}
+
+.ganeshi .title>p {
+    font-family: 'Mango';
+    font-size: 24px;
+    padding: 10px 60px;
+    line-height: 40px;
 }
 
 .ganeshi img {
@@ -466,6 +538,20 @@
 
     .ganeshi .title {
         font-size: 50px;
+        margin-left: 15px;
+    }
+
+    .ganeshi .title>a>p {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .ganeshi .title>p {
+        font-size: 20px;
+    }
+
+    .ganeshi .title>p br {
+        display: none;
     }
 }
 
@@ -476,6 +562,8 @@
 
     .ganeshi .title {
         font-size: 42px;
+        margin-left: 5px;
+
     }
 }
 
@@ -491,6 +579,14 @@
         position: inherit;
         order: -1;
         margin-bottom: 20%;
+        margin-left: 0;
+    }
+    .ganeshi .title>a>p {
+        font-size: 16px;
+    }
+
+    .ganeshi .title>p {
+        font-size: 18px;
     }
 }
 

@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naver</title>
+    <meta property="og:url" content="https://www.naver.com" /> <!-- 보이는 링크 -->
+    <meta property="og:type" content="website"/> <!-- 프로토콜 타입 -->
+    <meta property="og:title" content="RedKiwi, naver" /> <!-- 보이는 타이틀 -->
+    <meta property="og:description" content="네이버 클론 초복" /> <!-- 보이는 설명 -->
+    <meta property="og:image" content="naver.png" /> <!-- 보이는 이미지(카톡) -->
+    <link rel="icon" href="img/x-icon.png" type="image/x-icon"> <!-- 파비콘 -->
+    <link rel="stylesheet" href="/project/Naver_clone/css/reset.css">
+    <link rel="stylesheet" href="/project/Naver_clone/css/common.css">
+    <link rel="stylesheet" href="/project/Naver_clone/css/font.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="/project/Naver_clone/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="input_scroll">
+                <div class="logo_img">
+                    <img src="img/header_logo.png" alt="네이버">
+                </div>
+                <input type="text" placeholder="검색어를 입력해 주세요. ">
+                <div class="img">
+                    <img src="img/keyboard.png" alt="키보드">
+                    <img src="img/auto_seach.png" alt="자동 검색어">
+                    <img src="img/seach.png" alt="검색">
+                </div>
+            </div>
+            <div class="shortcuts">
+                <div class="short_go">
+                    <img src="img/bar.png" alt="바로가기">
+                </div>
+                <div class="short_pay">
+                    <img src="img/pay.png" alt="네이버페이">
+                </div>
+            </div>
+            <div class="seach">
+                <div class="logo">
+                    <img src="img/upload_1718675052628kzJcm.gif" alt="초복">
+                </div>
+                <div class="seach_box">
+                    <div class="text_seach">
+                        <div class="input">
+                            <input type="text" placeholder="검색어를 입력해 주세요. ">
+                        </div>
+                        <div class="img">
+                            <img src="img/keyboard.png" alt="키보드">
+                            <img src="img/auto_seach.png" alt="자동 검색어">
+                            <img src="img/seach.png" alt="검색">
+                        </div>
+                    </div>
+                    <div class="seach_bottom">
+                        <ul>
+                            <li>
+                                <img src="img/mail.png" alt="메일">
+                                <p>메일</p>
+                            </li>
+                            <li>
+                                <img src="img/cafe.png" alt="카페">
+                                <p>카페</p>
+                            </li>
+                            <li>
+                                <img src="img/blog.png" alt="블로그">
+                                <p>블로그</p>
+                            </li>
+                            <li>
+                                <img src="img/shopping.png" alt="쇼핑">
+                                <p>쇼핑</p>
+                            </li>
+                            <li>
+                                <img src="img/news.png" alt="뉴스">
+                                <p>뉴스</p>
+                            </li>
+                            <li>
+                                <img src="img/stock.png" alt="증권">
+                                <p>증권</p>
+                            </li>
+                            <li>
+                                <img src="img/real_estate.png" alt="부동산">
+                                <p>부동산</p>
+                            </li>
+                            <li>
+                                <img src="img/map.png" alt="지도">
+                                <p>지도</p>
+                            </li>
+                            <li>
+                                <img src="img/webtoon.png" alt="웹툰">
+                                <p>웹툰</p>
+                            </li>
+                            <li>
+                                <img src="img/zizizig.png" alt="치지직">
+                                <p>치지직</p>
+                            </li>
+                            <li>
+                                <img src="img/dot.png" alt="전체서비스">
+                                <p class="none">.</p>
+                            </li>
+                            <li>
+                                <img src="img/sdu.png" alt="서울디지털대">
+                                <p>서울디지털대</p>
+                            </li>
+                        </ul>
+                        <div class="sdu_img">
+                            <img src="img/sdu_text.png" alt="서울디지털대 신편입학 지원">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="benefits">
+                <div class="naver_talk">
+                    <img src="img/navertalk.png" alt="네이버톡">
+                </div>
+                <div class="alarm">
+                    <img src="img/alarm.png" alt="알림">
+                </div>
+                <div class="shopping_basket">
+                    <img src="img/shopping_basket.png" alt="장바구니">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="left_wrap">
+
+            <section class="banner">
+                <img src="img/banner.png" alt="일주일에 두번 도시락 보내는 기부가 있어요!">
+            </section>
+
+            <section class="newsstand">
+                <div class="news">
+                    <ul>
+                        <li>
+                            <a href="#" class="black">뉴스스탠드</a>
+                        </li>
+                        <li>
+                            <span class="dot"></span>
+                        </li>
+                        <li>
+                            <a href="#">언론사편집</a>
+                        </li>
+                        <li>
+                            <span>/</span>
+                        </li>
+                        <li>
+                            <a href="#">엔터</a>
+                        </li>
+                        <li>
+                            <span>/</span>
+                        </li>
+                        <li>
+                            <a href="#">스포츠</a>
+                        </li>
+                        <li>
+                            <span>/</span>
+                        </li>
+                        <li>
+                            <a href="#">경제</a>
+                        </li>
+                        <li>
+                            <span>/</span>
+                        </li>
+                        <li>
+                            <a href="#">쇼핑투데이</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="news_union">
+                    <div class="press_more">
+                        <div class="press_more_box">
+                            <div class="flex">
+                                <a href="#">전체언론사</a>
+                                <div class="img">
+                                    <img src="img/left_newsstand_press.png" alt="구독언론사보기">
+                                </div>
+                            </div>
+                            <div class="before">
+                                <a href="#">연합뉴스</a>
+                            </div>
+                            <div class="slide_news">
+                                <div class="swiper news_swiper">
+                                    <div class="swiper-wrapper news_swiper">
+                                        <div class="swiper-slide news_swiper">
+                                            <a href="#">동해 심해 가스전 첫 시추지로 '대왕고래' 낙점</a>
+                                        </div>
+                                        <div class="swiper-slide news_swiper">
+                                            <a href="#">'슈퍼자차'라더니...사고 통보 바로 안했다며 수리비 물린 ...</a>
+                                        </div>
+                                        <div class="swiper-slide news_swiper">
+                                            <a href="#">'봉선화 연정'˙'싫다 싫어' 부른 가수 현철 별세</a>
+                                        </div>
+                                        <div class="swiper-slide news_swiper">
+                                            <a href="#">美공화, 올해 39세 '강경보수' 밴스 상원의원 부통령후보로...</a>
+                                        </div>
+                                        <div class="swiper-slide news_swiper">
+                                            <a href="#">정부 "의료개혁 더 미룰 수 없어...의료계, 특위 참여해달라"</a>
+                                        </div>
+                                        <div class="swiper-slide news_swiper">
+                                            <a href="#">전남 남해안에 새벽 집중호우...정체전선 북상하며 비 뿌려</a>
+                                        </div>
+                                        <div class="swiper-slide news_swiper">
+                                            <a href="#">바이든 "'트럼프 과녁중앙' 발언 실수...그가 한 일 생각해...</a>
+                                        </div>
+                                        <div class="swiper-slide news_swiper">
+                                            <a href="#">고속도 추돌사고 2명 사망...알고 보니 1명은 견인차에 깔...</a>
+                                        </div>
+                                        <div class="swiper-slide news_swiper">
+                                            <a href="#">시간당 최대 103.5mm 폭우...전남 서남부 침수피해 잇달아</a>
+                                        </div>
+                                        <div class="swiper-slide news_swiper">
+                                            <a href="#">끝나지 않는 빌라 역전세 피해...상반기 전세 보증사고 2.7...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newshome">
+                        <p>
+                            <a href="#">뉴스스탠스</a>
+                        </p>
+                        <p>|</p>
+                        <p class="bold">
+                            <a href="#">뉴스홈</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="newsoption_box">
+                    <div class="newsoption">
+                        <div class="newsoption_list">
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_jtbc.png" alt="JTBC">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_bloter.png" alt="bloter">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_chosun.png" alt="chosun">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_cookie.png" alt="쿠키뉴스">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_cung.png" alt="충청일보">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_deajen.png" alt="대전일보">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_donga.png" alt="동아일보">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_gan.png" alt="한겨레">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_gh.png" alt="경향신문">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_insight.png" alt="Insight">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_jiji.png" alt="JIJI">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_kbs.png" alt="KBS">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_mbn.png" alt="MBN">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_meal.png" alt="매일경제">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_moneys.png" alt="MoneyS">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_newstv.png" alt="연합뉴스 TV">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_ohmy.png" alt="OhmyNews">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_people.png" alt="인민망">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_sbs.png" alt="SBS">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_sport.png" alt="스포츠조선">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_sportal.png" alt="sportalkorea">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_today.png" alt="충청투데이">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_zdnet.png" alt="ZDNET Korea">
+                                </a>
+                            </div>
+                            <div class="list_box">
+                                <a href="#">
+                                    <img src="img/newsoption_osen.png" alt="OSEN">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsoption_media">
+                    <div class="newsoption_media_box">
+                        <button type="button">
+                            <img src="img/newsoption_media_prev.png" alt="앞으로">
+                        </button>
+                        <div class="media_text">
+                            <p><strong>언론사</strong> 더보기</p>
+                            <span>1/<strong>4</strong></span>
+                        </div>
+                        <button type="button">
+                            <img src="img/newsoption_media_next.png" alt="뒤로">
+                        </button>
+                    </div>
+                </div>
+
+
+                <script>
+                    var swiper = new Swiper(".news_swiper", {
+                        direction: "vertical",
+                        touchRatio: 0,
+                        loop: true,
+                        autoplay: {
+                            delay: 1000,
+                        },
+                    });
+                </script>
+
+            </section>
+
+            <section class="shoppinglive">
+                <div class="shoppinglive_box">
+                    <div class="live_box">
+                        <div class="live_list">
+                            <ul>
+                                <li>
+                                    <a href="#" class="check">쇼핑</a>
+                                </li>
+                                <li>
+                                    <span>/</span>
+                                </li>
+                                <li>
+                                    <a href="#">맨즈</a>
+                                </li>
+                                <li>
+                                    <span>/</span>
+                                </li>
+                                <li>
+                                    <a href="#">원쁠딜</a>
+                                </li>
+                                <li>
+                                    <span>/</span>
+                                </li>
+                                <li>
+                                    <a href="#">쇼핑라이브</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="live_direction">
+                            <p>1<strong>/13</strong></p>
+                            <div class="live_button_box">
+                                <button type="button">
+                                    <img src="img/left_live_prev.png" alt="앞으로">
+                                </button>
+                                <button type="button">
+                                    <img src="img/left_live_next.png" alt="뒤로">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="store">
+                        <div class="store_box">
+                            <div class="store_top">
+                                <div class="store_list">
+                                    <div class="store_brand">
+                                        <div class="store_flex">
+                                            <a href="#"><strong>쿠팡</strong></a>
+                                            <span></span>
+                                            <a href="#">G마켓</a>
+                                            <span></span>
+                                            <a href="#">옥션</a>
+                                            <span></span>
+                                            <a href="#">SSG닷컴</a>
+                                        </div>
+                                        <div class="store_flex">
+                                            <a href="#">11번가</a>
+                                            <span></span>
+                                            <a href="#">올리브영</a>
+                                            <span></span>
+                                            <a href="#"><strong>위메프</strong></a>
+                                            <span></span>
+                                            <a href="#">하프클럽</a>
+                                        </div>
+                                        <div class="store_flex">
+                                            <a href="#">GS SHOP</a>
+                                            <span></span>
+                                            <a href="#">CJ온스타일</a>
+                                            <span></span>
+                                            <a href="#"><strong>패션플러스</strong></a>
+                                        </div>
+                                    </div>
+                                    <div class="store_shopping">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="img">
+                                                        <img src="img/left_store_shoppinghome.png" alt="쇼핑홈">
+                                                    </div>
+                                                    <div class="store_txt">쇼핑홈</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="img">
+                                                        <img src="img/left_store_review.png" alt="리뷰적립">
+                                                    </div>
+                                                    <div class="store_txt">리뷰적립</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="img">
+                                                        <img src="img/left_store_order.png" alt="주문">
+                                                    </div>
+                                                    <div class="store_txt">주문</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <div class="img">
+                                                        <img src="img/left_store_shoppingbag.png" alt="장바구니">
+                                                    </div>
+                                                    <div class="store_txt">장바구니</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="store_ad">
+                                        <div class="img">
+                                            <img src="img/left_store_ad.png" alt="풀리오">
+                                        </div>
+                                        <a href="#">압도적인 스펙 압도적인 시원 풀리오</a>
+                                    </div>
+                                </div>
+                                <div class="store_img">
+                                    <div class="store_item">
+                                        <div class="item_box">
+                                            <div class="img">
+                                                <img src="img/left_store_item1.png" alt="타임 세일">
+                                            </div>
+                                            <div class="store_text">
+                                                <a href="#">
+                                                    TIME SALE<br>
+                                                    퀄리티 좋네요~
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item_box">
+                                            <div class="img">
+                                                <img src="img/left_store_item2.png" alt="인기 폭주 아이템">
+                                            </div>
+                                            <div class="store_text">
+                                                <a href="#">
+                                                    쌩얼이 이뻐져요<br>
+                                                    지금 인기폭주!
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item_box">
+                                            <div class="img">
+                                                <img src="img/left_store_item3.png" alt="Z풀랍6 링케이스">
+                                            </div>
+                                            <div class="store_text">
+                                                <a href="#">
+                                                    완벽한 힌지보호<br>
+                                                    Z플립6 링케이스
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item_box">
+                                            <div class="img">
+                                                <img src="img/left_store_item4.png" alt="여름 데일리 썸머 코디">
+                                            </div>
+                                            <div class="store_text">
+                                                <a href="#">
+                                                    여름 데일리로~<br>
+                                                    썸머 코디 BEST!
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item_box">
+                                            <div class="img">
+                                                <img src="img/left_store_item5.png" alt="시원 펀칭레이스 원피스">
+                                            </div>
+                                            <div class="store_text">
+                                                <a href="#">
+                                                    시원 펀칭레이스<br>
+                                                    9천장돌파원피스
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item_box">
+                                            <div class="img">
+                                                <img src="img/left_store_item6.png" alt="곧 종료되는 900원 세일">
+                                            </div>
+                                            <div class="store_text">
+                                                <a href="#">
+                                                    죄송합니다!<br>
+                                                    900원 곧 종료
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item_box">
+                                            <div class="img">
+                                                <img src="img/left_store_item7.png" alt="이수지의 수영복">
+                                            </div>
+                                            <div class="store_text">
+                                                <a href="#">
+                                                    이수지의 수영복<br>
+                                                    완벽 군살커버~
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item_box">
+                                            <div class="img">
+                                                <img src="img/left_store_item8.png" alt="오븐">
+                                            </div>
+                                            <div class="store_text">
+                                                <a href="#">
+                                                    집놀러오면다들<br>
+                                                    어디서 샀냐해~
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item_box">
+                                            <div class="img">
+                                                <img src="img/left_store_item9.png" alt="초특가 세일">
+                                            </div>
+                                            <div class="store_text">
+                                                <a href="#">
+                                                    Cool~여름세일!<br>
+                                                    최대90%초특가
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="item_box">
+                                            <div class="img">
+                                                <img src="img/left_store_item10.png" alt="국민 플립플랍">
+                                            </div>
+                                            <div class="store_text">
+                                                <a href="#">
+                                                    1+1 39,000원<br>
+                                                    국민 플립플랍
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="store_bottom">
+                                <div class="benefits">
+                                    <span>오늘의 혜택</span>
+                                    <a href="#">
+                                        <span>
+                                            <img src="img/left_store_wemakeprice.png" alt="위메프">
+                                        </span>
+                                        <p>매일 00시, <strong>슈퍼 투데이특가</strong> 놓치면 후회할 역대급할인! </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="store_button">
+                        <div></div>
+                        <div class="store_button_box">
+                            <button type="button">
+                                <img src="img/newsoption_media_prev.png" alt="앞으로">
+                            </button>
+                            <div class="store_b_txt">
+                                <p><strong>쇼핑아이템</strong> 더보기</p>
+                                <span>1/<strong>13</strong></span>
+                            </div>
+                            <button type="button">
+                                <img src="img/newsoption_media_next.png" alt="뒤로">
+                            </button>
+                        </div>
+                        <div class="store_ad_txt">AD</div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="suggestion">
+                <div class="suggestion_box">
+                    <div class="sugges_box">
+                        <div class="sugges_list">
+                            <ul>
+                                <li>
+                                    <a href="#" class="show">추천 · 구독</a>
+                                </li>
+                                <li>
+                                    <span>/</span>
+                                </li>
+                                <li>
+                                    <a href="#">자동차</a>
+                                </li>
+                                <li>
+                                    <span>/</span>
+                                </li>
+                                <li>
+                                    <a href="#">웹툰</a>
+                                </li>
+                                <li>
+                                    <span>/</span>
+                                </li>
+                                <li>
+                                    <a href="#">패션뷰티</a>
+                                </li>
+                                <li>
+                                    <span>/</span>
+                                </li>
+                                <li>
+                                    <a href="#">레시피</a>
+                                </li>
+                                <li>
+                                    <span>/</span>
+                                </li>
+                                <li>
+                                    <a href="#">리빙</a>
+                                </li>
+                                <li>
+                                    <span>/</span>
+                                </li>
+                                <li>
+                                    <a href="#">책방</a>
+                                </li>
+                                <li>
+                                    <span>/</span>
+                                </li>
+                                <li>
+                                    <a href="#">지식+</a>
+                                </li>
+                                <li>
+                                    <span>/</span>
+                                </li>
+                                <li>
+                                    <a href="#">건강</a>
+                                </li>
+                                <li>
+                                    <span>/</span>
+                                </li>
+                                <li>
+                                    <a href="#">게임</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="popularity_box">
+                        <!--탭메뉴-->
+                        <div class="popularity_list">
+                            <ul>
+                                <li>
+                                    <a href="#" class="color">인기</a>
+                                </li>
+                                <li>
+                                    <a href="#">동물</a>
+                                </li>
+                                <li>
+                                    <a href="#">여행</a>
+                                </li>
+                                <li>
+                                    <a href="#">여행결혼</a>
+                                </li>
+                                <li>
+                                    <a href="#">영화</a>
+                                </li>
+                                <li>
+                                    <a href="#">육아</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="popularity_home">
+                            <a href="#">구독홈</a>
+                        </div>
+                    </div>
+
+                    <div class="feed">
+                        <!--이미지 인기 메뉴-->
+                        <div class="feed_box">
+                            <ul>
+                                <li>
+                                    <div class="img">
+                                        <img src="img/left_feed_img1.png" alt="중국 대만 침공">
+                                    </div>
+                                    <div class="feed_text">
+                                        <a href="#">중국 대만 침공 1차 공격에 만 5만 명 상륙</a>
+                                        <div class="img">
+                                            <img src="img/left_feed_img1-1.png" alt="밀밀">
+                                            <p>밀밀</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="img/left_feed_img2.png" alt="농구스타 김종규 황정음">
+                                    </div>
+                                    <div class="feed_text">
+                                        <a href="#">농구스타 "김종규♡황정음" 열애설 속 사천만원대 데일...</a>
+                                        <div class="img">
+                                            <img src="img/left_feed_img1-2.png" alt="다곰">
+                                            <p>다곰</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="img/left_feed_img3.png" alt="당첨되면 2억 버는">
+                                    </div>
+                                    <div class="feed_text">
+                                        <a href="#">당첨되면 2억 버는 판교 밸리자이 무순위 청약 노려볼...</a>
+                                        <div class="img">
+                                            <img src="img/left_feed_img1-3.png" alt="발악">
+                                            <p>발악</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="img/left_feed_img4.png" alt="여름맛 핀터레스트 패션">
+                                    </div>
+                                    <div class="feed_text">
+                                        <a href="#">여름맛 핀터레스트 패션(2)</a>
+                                        <div class="img">
+                                            <img src="img/left_feed_img1-4.png" alt="윤주">
+                                            <p>윤주</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="img/left_feed_img5.png" alt="친오빠가 갑자기 이상해">
+                                    </div>
+                                    <div class="feed_text">
+                                        <a href="#">친오빠가 갑자기 이상해</a>
+                                        <div class="img">
+                                            <img src="img/left_feed_img1-6.png" alt="베스트 뿜">
+                                            <p>베스트 뿜</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="img/left_feed_img6.png" alt="30대 이후 박재범이">
+                                    </div>
+                                    <div class="feed_text">
+                                        <a href="#">30대 이후 박재범이 물건 안사는 이유 "나는..."</a>
+                                        <div class="img">
+                                            <img src="img/left_feed_img1-6.png" alt="책썰미">
+                                            <p>책썰미</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="img/left_feed_img7.png" alt="기부">
+                                    </div>
+                                    <div class="absolute_icon">
+                                        <img src="img/left_suggestion_funding.png" alt="기부콩">
+                                        기부
+                                    </div>
+                                    <div class="feed_text">
+                                        <a href="#">20살, 가족을 위해 첫 번째 대출을 받았습니다</a>
+                                        <div class="img">
+                                            <img src="img/left_feed_img1-7.png" alt="사회연대은행">
+                                            <p>밀밀</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="img/left_feed_img8.png" alt="한국직업능력진흥원">
+                                    </div>
+                                    <div class="absolute_ad">
+                                        <img src="img/advertisement_close.png" alt="광고닫기">
+                                    </div>
+                                    <div class="feed_text">
+                                        <a href="#">한국직업능력진흥원 무료 자격증</a>
+                                        <div class="img">
+                                            <p>한국직업능력진흥원</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="img/left_feed_img9.png" alt="경기도 화성시 동탄역 롯데캐슬">
+                                    </div>
+                                    <div class="feed_text">
+                                        <a href="#">0원으로 갭투자 가능 2년 뒤 시세차익만 최소 9억에서...</a>
+                                        <div class="img">
+                                            <img src="img/left_feed_img1-9.png" alt="베리스">
+                                            <p>베리스</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="img/left_feed_img10.png" alt="먹골배청">
+                                    </div>
+                                    <div class="absolute_icon">
+                                        <img src="img/left_suggestion_funding.png" alt="펀딩">
+                                        펀딩
+                                    </div>
+                                    <div class="feed_text">
+                                        <a href="#">스틱으로 간편하게 쭉! 짜먹는 먹골배청</a>
+                                        <div class="img">
+                                            <img src="img/left_feed_img1-10.png" alt="팜아트홀릭">
+                                            <p>팜아트홀릭</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="img/left_feed_img11.png" alt="하나 사면 하나 기부">
+                                    </div>
+                                    <div class="absolute_icon">
+                                        <img src="img/left_suggestion_funding.png" alt="펀딩">
+                                        펀딩
+                                    </div>
+                                    <div class="feed_text">
+                                        <a href="#">하나 사면 하나 기부! 울트라 슬림핏 생리대</a>
+                                        <div class="img">
+                                            <img src="img/left_feed_img1-1.png" alt="산들산들">
+                                            <p>산들산들</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="img/left_feed_img12.png" alt="절약에 진심인 30대 신혼부부">
+                                    </div>
+                                    <div class="feed_text">
+                                        <a href="#">한 달 식비 30만원대, 절약에 진심인 30대 신혼부부</a>
+                                        <div class="img">
+                                            <img src="img/left_feed_img1-12.png" alt="썸랩">
+                                            <p>썸랩</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="feed_funny">
+                            <h3>매일 찾는 짧은 즐거움</h3>
+                            <div class="fun_box">
+                                <div class="swiper feed_Swiper">
+                                    <div class="swiper-wrapper feed_Swiper">
+                                        <div class="swiper-slide feed_Swiper">
+                                            <div class="feed_Swiper_box">
+                                                <div class="img">
+                                                    <img src="img/left_feed_fun1.png" alt="">
+                                                </div>
+                                                <a href="#">240714 KDF vs DRX 광동프릭...</a>
+                                                <p>서엿</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide feed_Swiper">
+                                            <div class="feed_Swiper_box">
+                                                <div class="img">
+                                                    <img src="img/left_feed_fun2.png" alt="">
+                                                </div>
+                                                <a href="#">바람의 아들 리드오프 이종범...</a>
+                                                <p>스포라이트 SPO...</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide feed_Swiper">
+                                            <div class="feed_Swiper_box">
+                                                <div class="img">
+                                                    <img src="img/left_feed_fun3.png" alt="">
+                                                </div>
+                                                <a href="#">여름에 무슨 머리할까 고민이...</a>
+                                                <p>오하제</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide feed_Swiper">
+                                            <div class="feed_Swiper_box">
+                                                <div class="img">
+                                                    <img src="img/left_feed_fun4.png" alt="">
+                                                </div>
+                                                <a href="#">무료입장 가능한 파리 뮤지엄🇫🇷</a>
+                                                <p>다다</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide feed_Swiper">
+                                            <div class="feed_Swiper_box">
+                                                <div class="img">
+                                                    <img src="img/left_feed_fun5.png" alt="">
+                                                </div>
+                                                <a href="#">아내를 이길수 없다</a>
+                                                <p>잭슨황부부</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide feed_Swiper">
+                                            <div class="feed_Swiper_box">
+                                                <div class="img">
+                                                    <img src="img/left_feed_fun6.png" alt="">
+                                                </div>
+                                                <a href="#">영양소가 풍부한 야채구이 ...</a>
+                                                <p>니은</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide feed_Swiper">
+                                            <div class="feed_Swiper_box">
+                                                <div class="img">
+                                                    <img src="img/left_feed_fun7.png" alt="">
+                                                </div>
+                                                <a href="#">안은진 '동화 속 공주님 아니세...</a>
+                                                <p>티브이데일리</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide feed_Swiper">
+                                            <div class="feed_Swiper_box">
+                                                <div class="img">
+                                                    <img src="img/left_feed_fun8.png" alt="">
+                                                </div>
+                                                <a href="#">이걸 할 수 있어야 해요</a>
+                                                <p>허석프로</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide feed_Swiper">
+                                            <div class="feed_Swiper_box">
+                                                <div class="img">
+                                                    <img src="img/left_feed_fun9.png" alt="">
+                                                </div>
+                                                <a href="#">수건쉰내 이제 5g 내피부에 5...</a>
+                                                <p>설수맘</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide feed_Swiper">
+                                            <div class="feed_Swiper_box">
+                                                <div class="img">
+                                                    <img src="img/left_feed_fun10.png" alt="">
+                                                </div>
+                                                <a href="#">이솜(Esom),'가슴라인 드러내는...</a>
+                                                <p>OSEN 연예</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide feed_Swiper">
+                                            <div class="feed_Swiper_box">
+                                                <div class="img">
+                                                    <img src="img/left_feed_fun11.png" alt="">
+                                                </div>
+                                                <a href="#">MAX FC '맥스걸' 송주아 라운딩</a>
+                                                <p>격투기 핫클립</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide feed_Swiper">
+                                            <div class="feed_Swiper_box">
+                                                <div class="img">
+                                                    <img src="img/left_feed_fun12.png" alt="">
+                                                </div>
+                                                <a href="#">천사같은 아내</a>
+                                                <p>잭슨황부부</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide feed_Swiper">
+                                            <div class="feed_Swiper_box">
+                                                <div class="img">
+                                                    <img src="img/left_feed_fun13.png" alt="">
+                                                </div>
+                                                <a href="#">당신의 선택은?</a>
+                                                <p>김뽀마미</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide feed_Swiper">
+                                            <div class="feed_Swiper_box">
+                                                <div class="img">
+                                                    <img src="img/left_feed_fun14.png" alt="">
+                                                </div>
+                                                <a href="#">상위 1% 우량아기의 남다른 식...</a>
+                                                <p>그린안지</p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide feed_Swiper">
+                                            <div class="feed_Swiper_box">
+                                                <div class="img">
+                                                    <img src="img/left_feed_fun15.png" alt="">
+                                                </div>
+                                                <a href="#">다들 하나가 돼서 놓았던 #송...</a>
+                                                <p>아리솜</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper_button">
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feed_more">
+                    <!--펼쳐보기-->
+                    <div class="feed_more_box">
+                        <p>펼쳐보기<strong>+</strong></p>
+                    </div>
+                </div>
+
+
+                <script>
+                    var swiper = new Swiper(".feed_Swiper", {
+                        slidesPerView: 6,
+                        spaceBetween: 30,
+                        touchRatio: 0,
+                        slidesPerGroup: 6,
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                    });
+                </script>
+
+            </section>
+
+
+
+
+        </div>
+
+        <div class="right_wrap">
+
+            <section class="login">
+                <p>네이버를 더 안전하고 편리하게 이용하세요</p>
+                <div class="login_box">
+                    <img src="img/login_naver.png" alt="로그인">
+                    <p>로그인</p>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">아이디 찾기</a>
+                    </li>
+                    <li>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="#">비밀번호 찾기</a>
+                    </li>
+                    <li>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="#">회원가입</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="advertisement">
+                <div class="img">
+                    <img src="img/advertisement_close.png" alt="광고">
+                </div>
+                <div class="advertisement_container">
+                    <h2>7월 말 OPEN 예정</h2>
+                    <div class="advertisement_box">
+                        <div class="img">
+                            <img src="img/advertisement_main.png" alt="도산 푸르지오 디아델">
+                        </div>
+                        <div class="advertisement_border">
+                            <h3>No.1 압도적 위치</h3>
+                            <h3>Only.1 독보적 가치</h3>
+                        </div>
+                    </div>
+                    <div class="advertisement_text">
+                        <div class="text_box">
+                            <div class="img">
+                                <img src="img/advertisement_logo.png" alt="로고">
+                            </div>
+                            <p>도안 푸르지오 디아델</p>
+                        </div>
+                        <div class="text_more">
+                            <p>더 알아보기</p>
+                            <div class="img">
+                                <img src="img/advertisement_more.png" alt="더 알아보기">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="weather">
+                <div class="weather_tit">
+                    <div class="w_title">
+                        <h2>날씨</h2>
+                        <div class="w_txt">
+                            <img src="img/weather_temperature.png" alt="온도">
+                            <p>예보 비교</p>
+                        </div>
+                    </div>
+                    <p>대전시 은행동</p>
+                </div>
+                <div class="weather_box">
+                    <div class="weather_img_box">
+                        <div class="weather_i_box">
+                            <div class="img">
+                                <img src="img/weather_main_img.png" alt="흐림">
+                            </div>
+                            <div class="box_text">
+                                <h1>26.6˚</h1>
+                                <p>흐림</p>
+                            </div>
+                        </div>
+                        <div class="temperature_box">
+                            <div class="temperature">
+                                <p>23˚</p>
+                                <strong>/</strong>
+                                <p>29˚</p>
+                            </div>
+                            <div class="weather_txt">
+                                <p>미세 <strong>좋음</strong></p>
+                                <span></span>
+                                <p>초미세 <strong>보통</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <img src="img/weather_img.png" alt="시간별 날씨">
+                    </div>
+                </div>
+            </section>
+
+            <section class="stock">
+                <div class="stock_tit">
+                    <div class="stock_title">
+                        <h2>증시</h2>
+                        <div class="img">
+                            <img src="img/stock_mark.png" alt="정보">
+                        </div>
+                    </div>
+                    <div class="stock_day">
+                        <p>07.16.</p>
+                        <p>14:52</p>
+                        <img src="img/stock_re.png" alt="리셋">
+                    </div>
+                </div>
+                <div class="stock_chart">
+                    <div class="stock_slide_box">
+                        <div class="swiper stock_swiper">
+                            <div class="swiper-wrapper stock_swiper">
+                                <div class="swiper-slide stock_swiper">
+                                    <img src="img/stock_USD.png" alt="환율">
+                                </div>
+                                <div class="swiper-slide stock_swiper">
+                                    <img src="img/stock_cospe.png" alt="코스피">
+                                </div>
+                                <div class="swiper-slide stock_swiper">
+                                    <img src="img/stock_cosdak.png" alt="코스닥">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stock_list">
+                        <ul>
+                            <li>
+                                <div class="hive">
+                                    <p>하이브</p>
+                                    <div class="hive_number">
+                                        <img src="img/stock_down.png" alt="하이브">
+                                        <strong>0.90%</strong>
+                                        <p>186,500</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="samsung">
+                                    <p>삼성전자</p>
+                                    <div class="samsung_number">
+                                        <img src="img/stock_down.png" alt="삼성전자">
+                                        <strong>1.15%</strong>
+                                        <p>87,700</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="hlb">
+                                    <p>HLB</p>
+                                    <div class="hlb_number">
+                                        <img src="img/stock_down.png" alt="HLB">
+                                        <strong>3.29%</strong>
+                                        <p>82,300</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="stock_more">
+                                    <p>인기종목 더보기</p>
+                                    <img src="img/advertisement_more.png" alt="더보기">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <script>
+                    var swiper = new Swiper(".stock_swiper", {
+                        loop: true,
+                        touchRatio: 0,
+                        autoplay: {
+                            delay: 2000,
+                        },
+                    });
+                </script>
+
+
+            </section>
+
+
+            <section class="right_banner">
+                <div class="right_banner_img">
+                    <img src="img/right_banner.png" alt="온라인에서 가장 빠르게 만나는 신상">
+                </div>
+            </section>
+
+
+            <section class="widgetboard">
+                <div class="widgetboard_box">
+                    <h2>위젯 보드</h2>
+                    <div class="widget">
+                        <div class="widget_top">
+                            <div class="calender">
+                                <h2>캘린더</h2>
+                                <h1>7.18<strong>목</strong></h1>
+                                <a href="#">로그인하기</a>
+                            </div>
+                            <div class="memo">
+                                <ul>
+                                    <li>
+                                        <p>메모</p>
+                                    </li>
+                                    <li>
+                                        <hr>
+                                    </li>
+                                    <li>
+                                        <hr>
+                                    </li>
+                                </ul>
+                                <div class="memo_box">
+                                    <a href="#">로그인하기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget_bottom">
+                            <div class="papago">
+                                <div class="img_txt">
+                                    <img src="img/right_papago_text.png" alt="파파고">
+                                </div>
+                                <div class="img_center">
+                                    <img src="img/right_papago.png" alt="파파고">
+                                </div>
+                                <a href="#">번역하기</a>
+                            </div>
+                            <div class="english">
+                                <div class="english_box">
+                                    <h2>영어사전</h2>
+                                    <hr>
+                                    <a href="#">
+                                        <div class="eng_sentence">
+                                            <p>There's a row of street stalls.</p>
+                                            <strong>노점상이 줄지어 있어.</strong>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="word_box">
+                                    <div class="img">
+                                        <img src="img/right_english.png" alt="단어찾기">
+                                    </div>
+                                    <div class="word">
+                                        <div class="word_txt">
+                                            <p>단어 검색하기</p>
+                                            <img src="img/right_english_hover.png" alt="단어찾기">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vibe">
+                        <div class="vibe_tit">
+                            <div class="vibe_tit_box">
+                                <img src="img/right_vibe.png" alt="바이브">
+                                <h2>마음이 쉬는 시간</h2>
+                            </div>
+                            <div class="vibe_tit_more">
+                                <p>다른 추천 보기</p>
+                                <img src="img/stock_re.png" alt="다른 추천보기">
+                            </div>
+                        </div>
+                        <div class="vibe_txt">
+                            <ul>
+                                <li>
+                                    <div class="img">
+                                        <img src="img/right_vibe_img1.png" alt="폭포">
+                                    </div>
+                                    <p>마음이 탁 틔이는 시원한 폭포...</p>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="img/right_vibe_img2.png" alt="산책로">
+                                    </div>
+                                    <p>눈과 마음이 편해지는 청량한...</p>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="img/right_vibe_img3.png" alt="모닥불">
+                                    </div>
+                                    <p>계속 듣고 싶은 모닥불에 장작...</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main_mobile">
+                        <div class="mobile_box">
+                            <div class="img">
+                                <img src="img/right_widgetnaver.png" alt="네이버">
+                            </div>
+                            <p><strong>모바일 네이버 메인</strong> 열기</p>
+                        </div>
+                        <div class="img">
+                            <img src="img/widget_mobile.png" alt="화살표">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="blurb">
+                <ul>
+                    <li>
+                        <div class="welfare">
+                            <div class="img">
+                                <img src="img/footer_welfare.png" alt="밀알복지재단">
+                                <img class="absolute_img" src="img/footer_advertisement.png" alt="광고표시">
+                            </div>
+                            <div class="welfare_txt">
+                                <h3>밀알복지재단</h3>
+                                <h2><a href="#">긴급의료비 지원</a></h2>
+                                <p>희귀병으로 광대뼈가 없이 <br>
+                                    태어난 하랑이를 지켜주세요</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="foundation">
+                            <div class="img">
+                                <img src="img/footer_foundation.png" alt="네이버 커넥트재단">
+                            </div>
+                            <div class="foundation_txt">
+                                <h3>네이버 커넥트재단</h3>
+                                <h2><a href="#">연구 과제 공모</a></h2>
+                                <p>공모에 선정된 연구자에게 <br>
+                                    교육 데이터와 연구비 지원</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="police">
+                            <div class="img">
+                                <img src="img/footer_police.png" alt="경찰청 안보수사국">
+                            </div>
+                            <div class="police_txt">
+                                <h3>
+                                    < 경찰청 안보수사국>
+                                </h3>
+                                <h2><a href="#">2024년 안보지킴이 공모전</a></h2>
+                                <p>24.6.17. ~ 8.31. <br>
+                                    지금 참여하러 가기 (클릭) </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="notice">
+                <p>공지사항</p>
+                <div class="service">
+                    <p>서비스 천제보기</p>
+                    <img src="img/widget_mobile.png" alt="서비스 전체보기">
+                </div>
+            </div>
+            <div class="aside">
+                <div class="partners_box">
+                    <div class="partners">
+                        <h4>Partners</h4>
+                        <ul>
+                            <li>
+                                <a href="#">프로젝트 꽃</a>
+                            </li>
+                            <li>
+                                <a href="#">네이버 비지니스</a>
+                            </li>
+                            <li>
+                                <a href="#">네이버 비즈니스 스쿨</a>
+                            </li>
+                            <li>
+                                <a href="#">네이버 광고</a>
+                            </li>
+                            <li>
+                                <a href="#">스토어 개설</a>
+                            </li>
+                            <li>
+                                <a href="#">지역업체 등록</a>
+                            </li>
+                            <li>
+                                <a href="#">엑스퍼트 등록</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="developers">
+                        <h4>Developers</h4>
+                        <ul>
+                            <li>
+                                <a href="#">네이버 개발자 센터</a>
+                            </li>
+                            <li>
+                                <a href="#">오픈 API</a>
+                            </li>
+                            <li>
+                                <a href="#">오픈소스</a>
+                            </li>
+                            <li>
+                                <a href="#">네이버 D2</a>
+                            </li>
+                            <li>
+                                <a href="#">네이버 D2SF</a>
+                            </li>
+                            <li>
+                                <a href="#">네이버 랩스</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="site_box">
+                    <div class="whale">
+                        <div class="whale_box">
+                            <h3>웨일 브라우저</h3>
+                            <p>이용안내</p>
+                        </div>
+                        <div class="img">
+                            <img src="img/footer_naverwhlie.png" alt="네이버웨일">
+                        </div>
+                    </div>
+                    <div class="enterprise">
+                        <div class="enterprise_box">
+                            <h3>기업 사이트</h3>
+                            <p>바로가기</p>
+                        </div>
+                        <div class="img">
+                            <img src="img/footer_site.png" alt="기업 사이트">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copylight">
+                <ul>
+                    <li>
+                        <a href="#">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="#">인재채용</a>
+                    </li>
+                    <li>
+                        <a href="#">제휴제안</a>
+                    </li>
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li class="bold">
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="#">청소년보호정책</a>
+                    </li>
+                    <li>
+                        <a href="#">네이버 정책</a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                    <li class="bold">
+                        <a href="#">ⓒ NAVER Corp.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="/project/Naver_clone/js/main.js"></script>
+
+</body>
+
+</html>

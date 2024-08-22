@@ -1,0 +1,725 @@
+body {
+    font-family: 'Apple-M';
+    font-size: 14px;
+    overflow-x: hidden;
+}
+
+
+
+.scr_img {
+    display: none;
+}
+
+.m_img {
+    display: none;
+}
+
+/* 헤더 */
+
+header {
+    width: 100%;
+    color: #fff;
+    position: fixed;
+    z-index: 100;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 40px;
+    font-family:  'Apple-M';
+    font-size: 24px;
+}
+
+.header>div {
+    flex: 1 1 0;
+}
+
+.header .header_img {
+    text-align: center;
+}
+
+.header .header_img img {
+    width: 100%;
+}
+
+.header .header_menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 65px;
+}
+
+header.down {
+    background-color: rgba(255, 255, 255, 0.8);
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+
+header.down a {
+    color: black;
+}
+
+header.down .p_img {
+    display: none;
+}
+
+header.down .scr_none {
+    display: none;
+}
+
+header.down .scr_img {
+    display: block;
+}
+
+
+/* 헤더 gnb */
+
+.header_gnb {
+    width: 650px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: -800px;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+    transition: .3s;
+}
+
+.header_gnb .gnb_box {
+    position: relative;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.header_gnb .gnb_box .gnb_list ul li {
+    padding: 15px 20px;
+    font-family: 'Cor-B';
+    font-size: 24px;
+}
+
+.header_gnb .gnb_box .gnb_list ul li span {
+    width: 100%;
+    height: 2px;
+    background-color: #E4E6D5;
+}
+
+.header_gnb .gnb_box .gnb_list ul .gnb_t_apple {
+    font-family: 'Apple-SB';
+}
+
+
+.header_gnb .gnb_box .gnb_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+
+.header_gnb.active {
+    right: 0;
+    transition: .3s;
+}
+
+.header_gnb .gnb_box .gnb_list ul li a:after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px #989E70;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0% 50%;
+}
+
+.header_gnb .gnb_box .gnb_list ul li a:hover:after {
+    transform: scaleX(1);
+}
+
+/* 아이콘 바꾸기 반응 */
+
+@media(max-width:1500px) {
+    .header .header_menu {
+        gap: 40px;
+    }
+    .header_menu a>strong {
+        display: none;
+    }
+    .header_menu a .m_img {
+        display: block;
+    }
+}
+
+
+/* 반응형 */
+
+@media(max-width:1024px) {
+    .header .header_brand {
+        display: none;
+    }
+}
+@media (max-width:768px) {
+    .header{
+        margin: 20px 10px;
+    }
+    .header .header_menu{
+        gap: 20px;
+    }
+    .header_gnb{
+        width: 450px;
+    }
+    .header_gnb .gnb_box .gnb_list ul li{
+        font-size: 20px;
+    }
+    .header_gnb .gnb_box .gnb_close img{
+        width: 30px;
+    }
+}
+@media (max-width:480px){
+    .header .header_menu{
+        gap: 15px;
+    }
+    .header_menu img{
+        width: 20px;
+    }
+    .header_gnb{
+        width: 380px;
+    }
+    .header_gnb .gnb_box{
+        margin-right: 0;
+    }
+    .header_gnb .gnb_box .gnb_list ul li{
+        font-size: 20px;
+        padding: 8px 20px;
+    }
+}
+@media (max-width:365px){
+    .header .header_menu{
+        gap: 20px;
+    }
+    .header_menu img{
+        width: 15px;
+    }
+    .header{
+        font-size: 14px;
+    }
+    .header_gnb{
+        width: 320px;
+    }
+
+}
+
+
+/* 푸터 */
+
+footer {
+    margin-top: 10%;
+}
+
+
+/* 푸터 PC */
+
+.footer_box_pc .footer_p_content {
+    border-top: 2px solid #e4bd7059;
+    border-bottom: 2px solid #e4bd7059;
+}
+
+.footer_p_content .content_inner_p {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_p_content .content_inner_p>div {
+    padding: 30px;
+}
+
+.footer_p_about,
+.footer_p_customer,
+.footer_p_legal {
+    flex: 0 0 10%;
+}
+
+.footer_p_seach,
+.footer_p_service {
+    flex: 0 0 17%;
+}
+
+.footer_p_content .content_inner_p>div:not(:first-child) {
+    border-left: 2px solid #e4bd7059;
+}
+
+.footer_p_content .content_inner_p>div h3 {
+    font-family: 'Apple-SB';
+    font-size: 28px;
+    padding-bottom: 20px;
+    text-align: start;
+}
+
+.footer_p_content .content_inner_p>div a {
+    font-family: 'Apple-M';
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.footer_p_seach {
+    text-align: center;
+}
+
+/* 분류창 */
+
+.footer_p_seach .seach_division {
+    min-width: 350px;
+    position: relative;
+}
+
+.footer_p_seach .seach_division select {
+    width: 100%;
+    border: 2px solid #e4bd7059;
+    padding: 20px;
+    appearance: none;
+    outline: 0;
+}
+
+.footer_p_seach .seach_division .seach_division_arrow {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: #e4bd7059 transparent transparent transparent;
+}
+
+
+/* 검색창 */
+
+.footer_p_seach .input {
+    margin-top: 10%;
+}
+
+.footer_p_seach .input input {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #e4bd7059;
+    outline: 0;
+}
+
+
+/* 찾기 버튼 */
+
+.footer_p_seach .seach_button {
+    padding-top: 20px;
+}
+
+.footer_p_seach .seach_btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_p_seach .seach_btn span {
+    display: inline-block;
+    padding: 10px 40px;
+    transition: 0.3s;
+    background-color: rgba(247, 249, 236, 0.301);
+    color: #000;
+    border: 2px solid #e4bd7059;
+    transition: 0.2s;
+    font-family: 'Apple-M';
+    font-size: 18px;
+}
+
+.footer_p_seach .seach_btn span:hover {
+    background-color: #E4BD70;
+    transition: 0.3s ease-out;
+    color: rgb(255, 255, 255);
+}
+
+
+/* 서비스 칸 */
+
+.footer_p_service p {
+    font-family: 'Apple-M';
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer_p_service strong {
+    display: block;
+    font-family: 'Apple-SB';
+    font-size: 16px;
+    color: #717171;
+    line-height: 25px;
+    padding-bottom: 40px;
+}
+
+.footer_p_service span {
+    font-family: 'Apple-M';
+    font-size: 18px;
+    line-height: 25px;
+    color: #828282;
+}
+
+/* 브랜드 리스트 */
+
+.footer_p_brand ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer_p_brand ul li {
+    padding: 30px 50px;
+}
+
+.footer_p_brand ul li a {
+    font-family: 'Apple-M';
+    font-size: 18px;
+}
+
+
+
+/* 푸터 모바일 */
+
+/*아코디언 메뉴*/
+.footer_inner_m {
+    position: relative;
+    padding: 30px 0;
+    cursor: pointer;
+    font-family: 'Apple-SB';
+    font-size: 22px;
+    border-top: 3px solid #F4E5C6;
+}
+
+.footer_inner_m.border_bottom{
+    border-bottom: 3px solid #F4E5C6;
+}
+.footer_inner_m.border_bottom.open{
+    border-bottom: none;
+}
+
+.footer_inner_m::before {
+    content: "";
+    font-size: 14px;
+    color: #000;
+    margin: 0 20px;
+}
+
+.footer_inner_m.open > a {
+    font-family: 'Apple-EB';
+    color: #000;
+}
+
+.footer_inner_list_m {
+    display: none;
+    font-size: 14px;
+}
+
+.footer_inner_list_m ul{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer_inner_list_m ul li{
+    font-size: 18px;
+    border-top: 2px solid #F4E5C6;
+}
+
+.footer_inner_list_m ul li a{
+    padding: 30px 40px;
+}
+
+.footer_inner_list_m .border_bottom{
+    border-bottom: 2px solid #F4E5C6;
+}
+
+
+.arrow-wrap {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+}
+
+.footer_inner_m .arrow-top {
+    display: none;
+}
+
+.footer_inner_m .arrow-bottom {
+    display: block;
+}
+
+.footer_inner_m.open .arrow-bottom {
+    display: none;
+}
+
+.footer_inner_m.open .arrow-top {
+    display: block;
+}
+
+
+/* 모바일 검색창 */
+
+.footer_seach_m{
+    margin: 40px 30px;
+    text-align: center;
+}
+
+.footer_seach_m .seach_division {
+    min-width: 350px;
+    position: relative;
+}
+
+.footer_seach_m .seach_division select {
+    width: 100%;
+    border: 2px solid #e4bd7059;
+    padding: 20px;
+    appearance: none;
+    outline: 0;
+}
+
+.footer_seach_m .seach_division .seach_division_arrow {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: #e4bd7059 transparent transparent transparent;
+}
+
+
+/* 검색창 */
+
+.footer_seach_m .input {
+    margin-top: 30px;
+}
+
+.footer_seach_m .input input {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #e4bd7059;
+    outline: 0;
+}
+
+/* 버튼창 */
+
+.footer_seach_m .seach_button {
+    padding-top: 20px;
+}
+
+.footer_seach_m .seach_btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_seach_m .seach_btn span {
+    display: inline-block;
+    padding: 10px 40px;
+    transition: 0.3s;
+    background-color: rgba(247, 249, 236, 0.301);
+    color: #000;
+    border: 2px solid #e4bd7059;
+    transition: 0.2s;
+    font-family: 'Apple-M';
+    font-size: 18px;
+}
+
+.footer_seach_m .seach_btn span:hover {
+    background-color: #E4BD70;
+    transition: 0.3s ease-out;
+    color: rgb(255, 255, 255);
+}
+
+
+/* 푸터 하단 */
+
+.footer_company {
+    background-color: #F4E5C6;
+    padding: 30px 0;
+}
+
+.footer_company_box {
+    margin: 0 10%;
+}
+
+.footer_company_box h2 {
+    font-family: 'Apple-SB';
+    font-size: 30px;
+    padding: 30px 0;
+}
+
+.footer_company_box .company_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* 회사 정렬 */
+
+.footer_company_box .company_list .company_list_box {
+    margin-bottom: 20px;
+}
+
+.footer_company_box .company_list .company_list_box p {
+    font-family: 'Apple-R';
+    font-size: 18px;
+
+}
+
+.footer_company_box .company_list .company_list_box strong {
+    font-family: 'Apple-EB';
+    line-height: 25px;
+    margin-right: 20px;
+}
+
+.footer_company_box .company_list .company_list_box .company_txt {
+    display: flex;
+    gap: 20px;
+}
+
+.footer_company_box .company_list .company_list_box .company_txt>p::before {
+    content: "|";
+    margin-right: 20px;
+}
+
+.footer_company_box .company_list .company_list_box .company_txt .company_txt_box {
+    display: flex;
+}
+
+
+.footer_company_box .company_list .company_icon img {
+    margin-left: 40px;
+}
+
+
+/* 카피 라이트 */
+
+.footer_company_box .company_copyright h4 {
+    font-family: 'Apple-L';
+    font-size: 18px;
+    color: #5E5E5E;
+}
+
+
+/* 모바일 숨기기 */
+
+.footer_box_mobile {
+    display: none;
+}
+
+/* 푸터 반응형 */
+@media (max-width:1240px) {
+    .footer_p_content .content_inner_p>div h3 {
+        font-size: 20px;
+    }
+
+    .footer_p_content .content_inner_p>div a {
+        font-size: 16px;
+    }
+
+    .footer_p_service p,
+    .footer_p_service span,
+    .footer_p_brand ul li a {
+        font-size: 16px;
+    }
+
+    .footer_p_service strong {
+        font-size: 14px;
+    }
+
+    .footer_p_seach .seach_division {
+        min-width: 250px;
+    }
+
+    .footer_company_box {
+        margin: 0 40px;
+    }
+}
+
+@media (max-width:1024px) {
+    .footer_box_pc {
+        display: none;
+    }
+
+    .footer_box_mobile {
+        display: block;
+    }
+    .footer_company_box .company_list .company_icon img {
+        width: 60px;
+        margin-left: 10px;
+    }
+}
+@media (max-width:768px) {
+    .footer_company{
+        text-align: center;
+    }
+    .footer_company_box .company_list {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .footer_company_box .company_list .company_list_box .company_txt>p::before {
+        content: none;
+    }
+    .footer_company_box .company_list .company_list_box .company_txt{
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .footer_company_box .company_list .company_list_box .company_txt .company_txt_box{
+        justify-content: center;
+
+    }
+}
+@media (max-width:480px){
+    .footer_company_box{
+        margin: 0 20px;
+    }
+    .footer_company_box .company_list .company_icon img {
+        width: 40px;
+    }
+    .footer_inner_m{
+        padding: 20px 0;
+        font-size: 20px;
+    }
+    .footer_inner_m::before{
+        margin: 0 10px;
+    }
+    .footer_inner_list_m ul li a{
+        padding: 15px 20px;
+    }
+    .footer_company{
+        text-align: left;
+    }
+    .footer_company_box .company_list .company_list_box .company_txt .company_txt_box{
+        justify-content: start;
+    }
+    .footer_company_box .company_list{
+        align-items: start;
+    }
+}
+@media (max-width:365px){
+    .footer_seach_m .seach_division{
+        min-width: 250px;
+    }
+    .footer_company_box .company_list .company_list_box p{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,54 @@
+
+@font-face {
+    font-family: 'AppleT';
+    font-weight: 100;
+    src: url(/project/Twosome_redign/font/AppleSDGothicNeoT.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'AppleUL';
+    font-weight: 200;
+    src: url(/project/Twosome_redign/font/AppleSDGothicNeoUL.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'AppleL';
+    font-weight: 300;
+    src: url(/project/Twosome_redign/font/AppleSDGothicNeoL.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'AppleR';
+    font-weight: 400;
+    src: url(/project/Twosome_redign/font/AppleSDGothicNeoR.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'AppleM';
+    font-weight: 500;
+    src: url(/project/Twosome_redign/font/AppleSDGothicNeoM.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'AppleSB';
+    font-weight: 600;
+    src: url(/project/Twosome_redign/font/AppleSDGothicNeoSB.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'AppleB';
+    font-weight: 700;
+    src: url(/project/Twosome_redign/font/AppleSDGothicNeoB.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'AppleEB';
+    font-weight: 800;
+    src: url(/project/Twosome_redign/font/AppleSDGothicNeoEB.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'AppleH';
+    font-weight: 900;
+    src: url(/project/Twosome_redign/font/AppleSDGothicNeoH.woff) format("woff");
+}

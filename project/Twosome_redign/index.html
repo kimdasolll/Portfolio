@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Twosome place</title>
+    <meta property="og:url" content="https://atwosomeplace-clone.com" /> <!-- 보이는 링크 -->
+    <meta property="og:type" content="website"/> <!-- 프로토콜 타입 -->
+    <meta property="og:title" content="RedKiwi, A Twosome place" /> <!-- 보이는 타이틀 -->
+    <meta property="og:description" content="투썸 플레이스 클론" /> <!-- 보이는 설명 -->
+    <meta property="og:image" content="promotion_3.png" /> <!-- 보이는 이미지(카톡) -->
+    <link rel="icon" href="img/x-icon.png" type="image/x-icon"> <!-- 파비콘 -->
+    <link rel="stylesheet" href="/project/Twosome_redign/css/reset.css">
+    <link rel="stylesheet" href="/project/Twosome_redign/css/font.css">
+    <link rel="stylesheet" href="/project/Twosome_redign/css/common.css">
+    <link rel="stylesheet" href="/project/Twosome_redign/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<!-- css 클래스명 맞게 수정 -->
+
+<body>
+    <header>
+        <div class="header_container">
+            <div class="gnb_bar">
+                <div class="logo">
+                    <div class="logo_img">
+                        <img src="img/atwosome_logo.png" alt="투썸 플레이스">
+                    </div>
+                </div>
+                <div class="gnb_list">
+                    <ul>
+                        <li>
+                            <a href="#">투썸 플레이스 소개</a>
+                            <ul class="list_introduction">
+                                <li>
+                                    <a href="#">투썸플레이스</a>
+                                    <div class="list_twosome">
+                                        <ul>
+                                            <li>
+                                                <a href="#">비전체계</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">연혁</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">BI</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">20주년 이야기</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Recruit</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">매장</a>
+                                    <div class="list_store">
+                                        <a href="#">DT/DI</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">브랜드 브로슈어</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">메뉴이야기</a>
+                            <ul class="list_menu">
+                                <li>커피이야기</li>
+                                <li>디저트이야기</li>
+                                <li>델리이야기</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">브랜드지원</a>
+                            <ul class="list_brand">
+                                <li>
+                                    <a href="#">어썸 페어링 플랜트</a>
+                                </li>
+                                <li>
+                                    <a href="#">어썸 디저트 플랜트</a>
+                                </li>
+                                <li>
+                                    <a href="#">C&D센터</a>
+                                </li>
+                                <li>
+                                    <a href="#">SEP센터</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">앱 & 멤버십</a>
+                            <ul class="list_app">
+                                <li>
+                                    <a href="#">투썸플레이스 앱 소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">투썸플레이스 멤버십</a>
+                                    <div class="list_membership">
+                                        <ul>
+                                            <li>
+                                                <a href="#">멤버십 소개</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">등급 및 혜택</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">가맹점 창업안내</a>
+                            <ul class="list_franchisee">
+                                <li>
+                                    <a href="#">가맹점 개설 안내</a>
+                                </li>
+                                <li>
+                                    <a href="#">창업설명회</a>
+                                </li>
+                                <li>
+                                    <a href="#">온라인 창업상담신청</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="#">가맹점 전용 금융상품</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">새소식 & 공지</a>
+                            <ul class="list_notice">
+                                <li>
+                                    <a href="#">공지사항</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="gnb_language">
+                        <div class="language">
+                            <a href="#">English</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side_img">
+                <img src="img/header_menu.png" alt="메뉴 열기">
+            </div>
+
+        </div>
+        <div class="side_bar">
+            <div class="side_bar_close">
+                <img src="img/header_menu_close.png" alt="메뉴 닫기">
+            </div>
+            <div class="side_menu">
+                <div class="side_menu_top">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                투썸플레이스 소개
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                메뉴이야기
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                브랜드지원
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                투썸플레이스 앱 & 멤버십
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                가맹점 창업안내
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                새소식 & 공지
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <span></span>
+                <div class="side_menu_bottom">
+                    <ul>
+                        <li>
+                            <a href="#">기업 및 단체구매안내</a>
+                        </li>
+                        <li>
+                            <a href="#">협력업체 제안</a>
+                        </li>
+                        <li>
+                            <a href="#">가맹상담신청</a>
+                        </li>
+                        <li>
+                            <a href="#">사이버신문고</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="side_menu_icon">
+                    <div class="img">
+                        <img src="img/footer_icon_instar_menu.png" alt="인스타">
+                    </div>
+                    <div class="img">
+                        <img src="img/footer_icon_youtube_menu.png" alt="유투브">
+                    </div>
+                    <div class="img">
+                        <img src="img/footer_icon_x_menu.png" alt="트위터, X">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+            const menu = document.querySelector('.header_container'); //변수 선택
+            const menuHeight = menu.getBoundingClientRect().height; // 헤더의 위치 정보 변수 정하기
+
+            document.addEventListener('scroll', () => { //이벤트를 진행 : scroll
+                if (window.scrollY > menuHeight) {
+                    menu.classList.add('active');
+                } else {
+                    menu.classList.remove('active');
+                }
+            });
+
+
+        </script>
+    </header>
+
+    <div class="main_wrap">
+        <section class="visual_banner">
+            <div class="swiper main_banner_swiper">
+                <div class="swiper-wrapper main_banner">
+                    <div class="swiper-slide main_banner">
+                        <img id="p_img" src="img/banner_1.png" alt="썸머 스탬프 이벤트">
+                        <img id="m_img" src="img/main_banner_1.png" alt="썸머 스탬프 이벤트">
+                    </div>
+                    <div class="swiper-slide main_banner">
+                        <img id="p_img" src="img/banner_2.png" alt="썸머 과일 주스">
+                        <img id="m_img" src="img/main_banner_2.png" alt="썸머 과일 주스">
+                    </div>
+                    <div class="swiper-slide main_banner">
+                        <img id="p_img" src="img/banner_3.png" alt="떠먹는 아이스 박스 아박">
+                        <img id="m_img" src="img/main_banner_3.png" alt="떠먹는 아이스 박스 아박">
+                    </div>
+                    <div class="swiper-slide main_banner">
+                        <img id="p_img" src="img/banner_4.png" alt="복숭아 음료 케이크 출시">
+                        <img id="m_img" src="img/main_banner_4.png" alt="복숭아 음료 케이크 출시">
+                    </div>
+                    <div class="swiper-slide main_banner">
+                        <img id="p_img" src="img/banner_5.png" alt="하이드로 플라스크 신제품 텀플러 출시">
+                        <img id="m_img" src="img/main_banner_5.png" alt="하이드로 플라스크 신제품 텀플러 출시">
+                    </div>
+                    <div class="swiper-slide main_banner">
+                        <img id="p_img" src="img/banner_6.png" alt="여름 시즌 스누피 굿즈 출시">
+                        <img id="m_img" src="img/main_banner_6.png" alt="여름 시즌 스누피 굿즈 출시">
+                    </div>
+                </div>
+                <div class="swiper-pagination main_banner"></div>
+            </div>
+
+
+            <script>
+                var swiper = new Swiper(".main_banner_swiper", {
+                    pagination: {
+                        el: ".swiper-pagination",
+                        type: "fraction",
+                    },
+                    loop: true,
+                    autoplay: {
+                        delay: 3500,
+                        disableOnInteraction: false,
+                    },
+                });
+            </script>
+
+        </section>
+
+
+        <section class="promotion">
+            <div class="promotion_h">
+                <h1>Promotion</h1>
+            </div>
+            <div class="promotion_box">
+                <ul>
+                    <li>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/promotion_1.png" alt="여름 시즌 과일 주스 출시">
+                            </a>
+                        </div>
+                        <div class="text">
+                            <a href="#">
+                                <h3>EVENT !</h3>
+                                <p>과일을 그대로 담은</p>
+                                <p>달콤한 과일 주스 출시 !</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/promotion_2.png" alt="떠먹는 아이스 케이크 박스 아박">
+                            </a>
+                        </div>
+                        <div class="text">
+                            <a href="#">
+                                <h3>EVENT !</h3>
+                                <p>떠먹는 아이스 케이크</p>
+                                <p>아이스 박스 아박</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <a href="#">
+                                <img src="img/promotion_3.png" alt="투썸 하트 멤버십 정책 변경 안내">
+                            </a>
+                        </div>
+                        <div class="text">
+                            <a href="#">
+                                <h3 class="notice">Notice !</h3>
+                                <p>투썸하트 멤버십 정책 변경 안내</p>
+                                <p>7월 1일부터 적용</p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!--클래스명 변경. pc, 모바일-->
+        <section class="alist">
+            <div class="img">
+                <img class="pc_img" src="img/alist_pc.png" alt="에이리스트">
+                <img class="tablet_img" src="img/alist_tablet.png" alt="에이리스트">
+                <img class="mobile_img" src="img/alist_mobile.png" alt="에이리스트">
+            </div>
+        </section>
+
+        <section class="menu">
+            <h1>MENU</h1>
+            <div class="menu_box">
+                <div class="menu_name">
+                    <ul>
+                        <li>
+                            <a href="#coffee">COFFEE</a>
+                        </li>
+                        <li>
+                            <a href="#dessert">DESSERT</a>
+                        </li>
+                        <li>
+                            <a href="#deli">DELI</a>
+                        </li>
+                        <li>
+                            <h5>
+                                <a href="#">MORE</a>
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu_slide_box">
+                    <div class="menu_coffee" id="coffee">
+                        <div class="swiper menu_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/coffee_spanish.png" alt="스페니쉬 연유 라떼">
+                                    <p>스페니쉬 연유 라떼</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/coffee_longblack.png" alt="롱블랙">
+                                    <p>롱블랙</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/coffee_twg1837black.png" alt="TWG 1837 블랙티">
+                                    <p>TWG 1837 블랙티</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/coffee_strawberry.png" alt="스트로베리 피치 프라페">
+                                    <p>스트로베리 피치 프라페</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_dessert" id="dessert">
+                        <div class="swiper menu_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/dessert_strawberrychoco.png" alt="스트로베리 초콜릿 생크림">
+                                    <p>스트로베리 초콜릿 생크림</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dessert_tiramisu.png" alt="마스카포네 티라미수">
+                                    <p>마스카포네 티라미수</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dessert_redcake.png" alt="레드 벨벳">
+                                    <p>레드 벨벳</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dessert_cheesecake.png" alt="뉴욕 치즈 케이크">
+                                    <p>뉴욕 치즈 케이크</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dessert_icebax.png" alt="아이스박스">
+                                    <p>아이스 박스</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dessert_macaroon.png" alt="마카롱 세트">
+                                    <p>마카롱 세트 (6개입)</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/dessert_softice.png" alt="소프트 아이스크림">
+                                    <p>소프트 아이스크림 (컵)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_deli" id="deli">
+                        <div class="swiper menu_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="img/deli_bflt.png" alt="호밀 B.F.L.T">
+                                    <p>호밀 B.F.L.T</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/deli_croissant.png" alt="코코넛 카야 크루아상">
+                                    <p>코코넛 카야 크루아상</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/deli_egg.png" alt="베리 머치 에그">
+                                    <p>베리 머치 에그</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/deli_panini.png" alt="페스토 햄치즈 파니니">
+                                    <p>페스토 햄치즈 파니니</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/deli_salad.png" alt="그릴드 치킨 샐러드">
+                                    <p>그릴드 치킨 샐러드</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".menu_swiper", {
+                    slidesPerView: 2.2, //레이아웃 뷰 개수 
+                    spaceBetween: 10, //위 slidesPerview 여백
+                    breakpoints: { //반응형 width 
+                        640: {
+                            slidesPerView: 2.8,
+                            spaceBetween: 10,
+                        },
+                        768: {
+                            slidesPerView: 3.8,
+                            spaceBetween: 10,
+                        }
+                    }
+                });
+            </script>
+
+        </section>
+
+
+
+        <section class="application">
+            <div class="app_box">
+                <div class="img">
+                    <img class="app_pc_img" src="img/app_introduction.png" alt="어플리케이션 pc 이미지">
+                    <img class="app_mobile_img" src="img/app_mobile.png" alt="어플리케이션 모바일 이미지">
+                </div>
+                <div class="app_txt">
+                    <div class="app_down_img">
+                        <img src="img/app_twosome.png" alt="투썸 하트 앱을 깔아보세요">
+                    </div>
+                    <div class="app_txt_box">
+                        <div class="mobile_txt">
+                            <p>주문할수록 혜택이 늘어나는 <br>
+                                투썸하트 앱을 만나보세요!</p>
+                        </div>
+                        <!-- 모바일 추가 부분 
+                     주문할수록 혜택이 늘어나는 투썸하트 앱을 만나보세요-->
+                        <div class="app_txt">
+                            <p>쉽고 빠르게 주문하는 모바일주문 서비스 <strong>'투썸오더'</strong> </p>
+                            <p>혜택이 차곡차곡 쌓이는 <strong>'스탬프'</strong> 적립</p>
+                            <p>다양한 종류의 투썸 케이크를 미리 주문할 수 있는 <strong>'예약 서비스'</strong></p>
+                            <h3>더 편리하고 새로워진 투썸하트 앱을 만나보세요!</h3>
+                        </div>
+                        <div class="app_down_code">
+                            <div class="app_google">
+                                <a href="#">
+                                    <img src="img/app_google.png" alt="구글">
+                                    <p>Google play</p>
+                                </a>
+                            </div>
+                            <div class="app_ico">
+                                <a href="#">
+                                    <img src="img/app_apple.png" alt="애플 스토어">
+                                    <p>app store</p>
+                                </a>
+                            </div>
+                            <div class="app_qr">
+                                <img src="img/app_qr.png" alt="QR 코드">
+                            </div>
+
+                            <!-- 모바일 추가 부분 
+                      #빠른 결제 #투썸페이 #하트적립 #하트혜택 #이벤트혜택알림-->
+                        </div>
+                        <div class="mobile_txt">
+                            <p>#빠른 결제 #투썸페이 <br>
+                                #하트적립 #하트혜택 <br>
+                                #이벤트혜택알림</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="brand">
+            <div class="brand_box">
+                <h1>BRANSD SUPPORT</h1>
+                <div class="move_box">
+                    <div class="swiper-button-next brand_next"></div>
+                    <div class="swiper-button-prev brand_prev"></div>
+                </div>
+            </div>
+            <div class="brand_list_box">
+                <div class="swiper_box">
+                    <div class="swiper brand_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/brand_roasting.png" alt="로스팅 플랜트">
+                                <div class="swiper_text">
+                                    <h5>로스팅 플랜트</h5>
+                                    <p>원두 로스팅부터 <br>
+                                        고객의 손에 들리는 <br>
+                                        한 잔의 커피까지, <br>
+                                        최고의 커피 품질을 만듭니다.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/brand_dessert.png" alt="디저트 플랜트">
+                                <div class="swiper_text">
+                                    <h5>디저트 플랜트</h5>
+                                    <p>최고의 맛과 품질을 자랑하는 <br>
+                                        투썸플레이스의 디저트를 만듭니다.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/brand_cdcenter.png" alt="C&D 센터">
+                                <div class="swiper_text">
+                                    <h5>C&D 센터</h5>
+                                    <p>창의성을 바탕으로 고부가가치 제품 개발과 <br>
+                                        원가경쟁력을 갖춘 제품 체계를 만들어 <br>
+                                        고객의 만족도를 높이고,<br>
+                                        더욱 투썸플레이스답게 만들어주는 곳입니다.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/brand_sepcenter.png" alt="SEP 센터">
+                                <div class="swiper_text">
+                                    <h5>SEP 센터</h5>
+                                    <p>투썸플레이스 SEP센터는 <br>
+                                        브랜드 가치를 만들어 내는 전문가 육성 센터입니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="store_box">
+                    <div class="store">
+                        <h4>STORE</h4>
+                        <p>원하는 지역의 매장을 <br> 검색해보세요.</p>
+                        <div class="icon">
+                            <img class="img_nohover" src="img/brand_icon_store.png" alt="매장">
+                            <img class="img_hover" src="img/brand_icon_store_hover.png" alt="매장">
+                        </div>
+                    </div>
+                    <div class="franchisee">
+                        <h4>가맹점 문의</h4>
+                        <p>당신의 창업 성공 스토리, <br> 투썸플레이스와 함께 하세요 .</p>
+                        <div class="icon">
+                            <img class="img_nohover" src="img/brand_icon_franchisee.png" alt="가맹점 문의">
+                            <img class="img_hover" src="img/brand_icon_franchisee_hover.png" alt="가맹점 문의">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                var swiper = new Swiper(".brand_swiper", {
+                    loop: true,
+                    navigation: {
+                        nextEl: ".brand_next",
+                        prevEl: ".brand_prev",
+                    },
+                });
+            </script>
+
+        </section>
+
+    </div>
+
+
+    
+    <footer>
+        <div class="corporation">
+            <div class="corporation_box">
+                <div class="group">
+                    <h5>기업 및 단체 구매 안내</h5>
+                    <h5>협력업체 제안</h5>
+                </div>
+                <div class="cyber">
+                    <h5>사이버 신문고</h5>
+                    <h5>가맹상담신청</h5>
+                </div>
+            </div>
+            <div class="home">
+                <div class="address">
+                    <p>Address</p>
+                    <p>서울특별시 중구 을지로 170, 8층(을지로 4가, 을지트윈타워) 투썸플레이스(주)</p>
+                </div>
+                <div class="center">
+                    <p>Customer Center</p>
+                    <p>고객센터 : 1577 - 4410</p>
+                </div>
+            </div>
+        </div>
+        <div class="clause">
+            <ul>
+                <li>
+                    <a href="#">이용약관</a>
+                </li>
+                <li class="information">
+                    <a href="#">개인정보처리방침</a>
+                </li>
+                <li>
+                    <a href="#">위치기반서비스 이용약관</a>
+                </li>
+                <li>
+                    <a href="#">이메일 무단수집거부</a>
+                </li>
+                <li>
+                    <a href="#">법적고지</a>
+                </li>
+                <li>
+                    <a href="#">사업자정보확인</a>
+                </li>
+            </ul>
+        </div>
+        <div class="ceo">
+            <div class="ceo_name">
+                <p>대표이사 : 문영주</p><span></span>
+                <p>개인정보보호책임자 : 정병구</p><span></span>
+                <p>사업자등록번호 : 404-86-0-01054</p>
+            </div>
+            <div class="ceo_sale">
+                <p>통신판매업종신고증 : 제 2018-서울중구-0353호</p><span></span>
+                <p>대표이메일 : helpmaster@twosome.co.kr</p>
+            </div>
+        </div>
+        <div class="copylight">
+            <div class="copy">
+                <p>Copyright ⓒ 2021 A TWOSOME PLACE Co., LTD. All Rights Reserved.</p>
+            </div>
+            <div class="footer_icon">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img class="p_c_img" src="img/footer_icon_instar.png" alt="인스타">
+                            <img class="mo_img" src="img/footer_icon_instar_mobile.png" alt="인스타">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="p_c_img" src="img/footer_icon_youtube.png" alt="유투브">
+                            <img class="mo_img" src="img/footer_icon_youtube_mobile.png" alt="유투브">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="p_c_img" src="img/footer_icon_x.png" alt="엑스">
+                            <img class="mo_img" src="img/footer_icon_x_mobile.png" alt="엑스">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="/project/Twosome_redign/js/main.js"></script>
+
+</body>
+
+</html>

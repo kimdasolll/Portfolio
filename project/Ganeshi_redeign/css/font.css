@@ -1,0 +1,54 @@
+
+@font-face {
+    font-family: 'Apple-T';
+    font-weight: 100;
+    src: url(/project/Ganeshi_redeign/font/AppleSDGothicNeoT.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Apple-UL';
+    font-weight: 200;
+    src: url(/project/Ganeshi_redeign/font/AppleSDGothicNeoUL.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Apple-L';
+    font-weight: 300;
+    src: url(/project/Ganeshi_redeign/font/AppleSDGothicNeoL.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Apple-R';
+    font-weight: 400;
+    src: url(/project/Ganeshi_redeign/font/AppleSDGothicNeoR.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Apple-M';
+    font-weight: 500;
+    src: url(/project/Ganeshi_redeign/font/AppleSDGothicNeoM.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Apple-SB';
+    font-weight: 600;
+    src: url(/project/Ganeshi_redeign/font/AppleSDGothicNeoSB.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Apple-B';
+    font-weight: 700;
+    src: url(/project/Ganeshi_redeign/font/AppleSDGothicNeoB.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Apple-EB';
+    font-weight: 800;
+    src: url(/project/Ganeshi_redeign/font/AppleSDGothicNeoEB.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Apple-H';
+    font-weight: 900;
+    src: url(/project/Ganeshi_redeign/font/AppleSDGothicNeoH.woff) format("woff");
+}

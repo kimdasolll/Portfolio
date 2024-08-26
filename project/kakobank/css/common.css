@@ -1,0 +1,236 @@
+body {
+    overflow-x: hidden;
+}
+
+
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 20;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header_mobile {
+    display: none;
+    position: fixed;
+    width: 100%;
+}
+
+.header {
+    margin: auto;
+    border-bottom: 1px solid rgba(190, 190, 190, 0.774);
+}
+
+.header .kakao {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+}
+
+.header ul li {
+    padding: 10px 20px;
+}
+
+.header ul li>.site_btn {
+    border: 1px solid rgba(190, 190, 190, 0.774);
+    border-radius: 20px;
+    padding: 10px 30px 10px 20px;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+}
+
+.header ul li>.site_btn::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    position: absolute;
+    top: 35%;
+    right: 8%;
+    background: url(https://kakaobank.com/static/images/web/svg_line_arrow_down.svg);
+    background-size: 12px 12px;
+}
+
+
+.header ul li a:hover {
+    text-decoration: underline;
+}
+
+.header ul li .eng_icon a {
+    background-image: url(https://kakaobank.com/static/images/web/icon_eng.svg);
+    background-repeat: no-repeat;
+}
+
+.header ul li .eng_icon a:hover {
+    background-image: url(https://kakaobank.com/static/images/web/icon_eng_w.svg);
+}
+
+
+.header_mobile_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.header_mobile.active{
+    background-color: #fff;
+    transition: .2s;
+}
+
+
+@media all and (min-width: 365px) and (max-width: 1024px) {
+    .header {
+        display: none;
+    }
+    .header_mobile {
+        display: block;
+    }
+    .header_mobile_box{
+        padding: 10px 20px;
+    }
+    .header_mobile_box > .img img{
+        width: 80px;
+    }
+}
+
+
+
+.white_space {
+    width: 100%;
+    height: 35px;
+    background-color: #fafafa;
+    margin-top: 60px;
+}
+
+footer {
+    background-color: #eee;
+    padding-bottom: 10px;
+}
+
+
+.footer {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+
+.footer .footer_top {
+    padding: 20px 0 16px;
+}
+
+.footer .footer_top>a {
+    font-size: 11px;
+    color: #666;
+    padding: 4px 0;
+}
+
+.footer .footer_top>span {
+    width: 1px;
+    height: 10px;
+    background-color: #d8d8d8;
+    margin: 8px 9px 0;
+}
+
+.footer .footer_top .bold {
+    color: #000;
+    font-weight: bold;
+}
+
+
+.footer .footer_middle {
+    font-size: 12px;
+    color: #666;
+}
+
+.footer .footer_middle p>strong {
+    color: #000;
+}
+
+.footer .footer_middle>span {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.footer .footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer .footer_bottom .f_left {
+    display: flex;
+    gap: 20px;
+}
+
+.footer .footer_bottom .f_left a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: #666;
+    font-weight: bold;
+}
+
+.footer .footer_bottom .f_right a {
+    padding-left: 5px;
+}
+
+
+
+@media all and (min-width: 365px) and (max-width: 1024px) {
+    footer {
+        background-color: #fafafa;
+        max-width: none;
+    }
+
+    .footer{
+       max-width: none;
+       padding: 0 20px;
+    }
+
+    .footer .footer_top>a {
+        font-size: 11px;
+    }
+    .footer .footer_middle {
+        font-size: 11px;
+    }
+    .footer .footer_middle p>strong,
+    .footer .footer_middle p>span {
+        display: none;
+    }
+    .footer .footer_bottom .f_left a{
+        font-size: 11px;
+    }
+    .footer .footer_bottom .f_left .m_none {
+        display: none;
+    }
+    .footer .footer_bottom .f_left .img img{
+        width: 22px;
+    }
+
+    .footer .footer_bottom .f_right {
+        display: none;
+    }
+    .footer .footer_top>span {
+        margin: 5px 7px 0;
+    }
+}

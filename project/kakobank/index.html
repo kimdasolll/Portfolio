@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오뱅크</title>
+    <meta property="og:url" content="https://www.kakaobank.com" /> <!-- 보이는 링크 -->
+    <meta property="og:type" content="website"/> <!-- 프로토콜 타입 -->
+    <meta property="og:title" content="RedKiwi, kakaobank" /> <!-- 보이는 타이틀 -->
+    <meta property="og:description" content="카카오뱅크 클론" /> <!-- 보이는 설명 -->
+    <meta property="og:image" content="kakaobank.png" /> <!-- 보이는 이미지(카톡) -->
+    <link rel="icon" href="image/x-icon.png" type="image/x-icon"> <!-- 파비콘 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="header">
+            <div class="kakao">
+                <div class="logo">
+                    <div class="logo_img">
+                        <a href="#">
+                            <img src="https://kakaobank.com/static/images/web/logo_black.svg" alt="카카오뱅크">
+                        </a>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">은행소개</a>
+                    </li>
+                    <li>
+                        <a href="#">IR투자정보</a>
+                    </li>
+                    <li>
+                        <a href="#">상품안내</a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                    <li>
+                        <button class="site_btn">관련사이트</button>
+                    </li>
+                    <li>
+                        <div class="eng_icon">
+                            <a href="#">
+                                <img src="https://kakaobank.com/static/images/web/icon_eng.svg" alt="언어변경">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header_mobile">
+            <div class="header_mobile_box">
+                <div class="img">
+                    <img src="https://kakaobank.com/static/images/web/logo_black.svg" alt="카카오뱅크">
+                </div>
+                <div class="hamberger_menu">
+                    <div class="img">
+                        <img src="image/header_menu.png" alt="메뉴열기">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main_warp">
+        <div class="container">
+            <section class="kakao_main">
+                <div class="kakao_box">
+                    <div class="kakao_img">
+                        <span></span>
+                    </div>
+                    <div class="kakao_txt">
+                        <div class="kakao_h_txt">
+                            <h1>이미 모두의 은행 </h1>
+                            <h1>지금은 카카오뱅크</h1>
+                        </div>
+                        <div class="kakao_p_txt">
+                            <div class="p_top_txt">
+                                <p>한 사람, 한 사람을 위해 시작한 은행이</p>
+                                <p>더 많은 사람들이 찾는 모두의 은행이 되었습니다.</p>
+                            </div>
+                            <div class="p_bottom_txt">
+                                <p>보내고, 받고, 모으고, 쓰는</p>
+                                <p>당신의 모든 일이 바뀌고 있습니다.</p>
+                            </div>
+                        </div>
+                        <div class="kakao_download">
+                            <div class="down_google">
+                                <img src="image/google.png" alt=""><a href="#">Google play</a>
+                            </div>
+                            <div class="down_app">
+                                <img src="image/app store.png" alt=""><a href="#">App store</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_mobile">
+                    <div class="mobile_box">
+                        <h2>이미 모두의 은행<br>
+                        지금은 카카오뱅크</h2>
+                        <p>한 사람, 한 사람을 위해 시작한 은행이<br>
+                        더 많은 사람들이 찾는 모두의 은행이 되겠습니다.</p>
+                    </div>
+                    <div class="img">
+                        <img src="image/main_m.png" alt="카카오뱅크">
+                    </div>
+                    <div class="mobile_down">
+                        <a href="#">
+                            <img src="image/google.png" alt="">앱 다운로드
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="kakao_mobile">
+                <div class="mo_img">
+                    <img src="image/main2.png" alt="">
+                </div>
+                <div class="mo_txt">
+                    <div class="mo_txt_h">
+                        <h1>모바일로 더 손쉬운</h1>
+                        <h1>계좌개설, 간편한 이체</h1>
+                    </div>
+                    <div class="mo_txt_p">
+                        <p>인증서, OTP 없이 계좌 개설이 간편합니다.</p>
+                        <p>여러 건의 이체도 몇 번의 터치도 손쉽게 보낼 수 있습니다.</p>
+                    </div>
+                    <div class="mo_box">
+                        <a href="#">카카오뱅크 입출금통장 ></a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="white_space"></div>
+
+            <section class="kakao_deposit">
+                <div class="deposit_img">
+                    <img src="image/main3.png" class="p_img" alt="">
+                    <img src="image/kakao_deposit_m_img.png" class="m_img" alt="">
+                </div>
+                <div class="deposit_txt">
+                    <div class="deposit_txt_h">
+                        <h1>우대조건 없이</h1>
+                        <h1>합리적인 예금과 적금</h1>
+                    </div>
+                    <div class="deposit_txt_p">
+                        <p>기대했던 금리와 다르게 복잡한 우대조건에 실망한 적이 있었나요?</p>
+                        <p>카카오뱅크의 예금, 적금은 숨겨진 우대조건 없이 누구에게나 편리하고 합리적입니다.</p>
+                    </div>
+                    <div class="deposit_box">
+                        <a href="#">정기예금 ></a>
+                        <a href="#">자유적금 ></a>
+                    </div>
+                    <div class="deposit_img_box">
+                        <img src="image/main3_1.png"  alt="">
+                    </div>
+                </div>
+            </section>
+
+            <div class="white_space"></div>
+
+            <section class="kakao_team">
+                <div class="team_img">
+                    <img src="image/main4.png" alt="">
+                </div>
+                <div class="team_txt">
+                    <div class="team_txt_h">
+                        <h1>함께 쓰고 같이 보는</h1>
+                        <h1>모임통장</h1>
+                    </div>
+                    <div class="team_txt_p">
+                        <p>카카오톡 친구를 바로 모임통장으로 초대하고</p>
+                        <p>친구들과 함께 잔액과 입출금 현황을 확인할 수 있습니다.</p>
+                        <p>재미있는 메시지 카드로 회비 입금 요청도 해보세요.</p>
+                    </div>
+                    <div class="team_box">
+                        <a href="#">모임통장 ></a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="white_space"></div>
+
+            <section class="kakao_meet">
+                <div class="meet_img">
+                    <img src="image/main5.png" alt="">
+                </div>
+                <div class="meet_txt">
+                    <div class="meet_txt_h">
+                        <h1>함께 도전해서</h1>
+                        <h1>재미있는 26주적금</h1>
+                    </div>
+                    <div class="meet_txt_p">
+                        <p>26주동안 변화하는 재미에 빠져있는 사이</p>
+                        <p>어느것 만기 달성 경험을 맛보게 됩니다.</p>
+                    </div>
+                    <div class="meet_box">
+                        <a href="#">26주적금 ></a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="white_space"></div>
+
+            <section class="kakao_foreign">
+                <div class="foreign_img">
+                    <img src="image/main6.png" alt="">
+                </div>
+                <div class="foreign_txt">
+                    <div class="foreign_txt_h">
+                        <h1>해외계좌송금과</h1>
+                        <h1>WU빠른해외송금을</h1>
+                        <h1>더 쉽고, 저렴하게</h1>
+                    </div>
+                    <div class="foreign_txt_p">
+                        <p>해외계좌송금이 가능한 22개국을 포함하여</p>
+                        <p>전세계 200여개국으로</p>
+                        <p>WU빠른해외송금이 가능합니다.</p>
+                    </div>
+                    <div class="foreign_box">
+                        <a href="#">해외송금 ></a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="kakao_time">
+                <div class="time_img">
+                    <img src="image/main7.png" alt="">
+                </div>
+                <div class="time_txt">
+                    <div class="time_txt_h">
+                        <h1>복잡한 서류 제출을 간편하게, 내가 원하는 시간에</h1>
+                    </div>
+                    <div class="time_txt_p">
+                        <p>이사 날짜가 주말이나 공휴일이어도 전월세보증금 대출을 신청할 수 있습니다.</p>
+                    </div>
+                    <div class="time_box">
+                        <a href="#">마이너스 통장대출 ></a>
+                        <a href="#">신용대출 ></a>
+                        <a href="#">개인사업자 대출 ></a>
+                        <a href="#">전월세보증금 대출 ></a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="kakao_card">
+                <div class="card_img">
+                    <img src="image/main8_lion.png" alt="">
+                    <img src="image/main8_apeach.png" alt="">
+                    <img src="image/main8_muzi.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="image/kakocard_m_img.png" alt="">
+                </div>
+                <div class="card_txt">
+                    <div class="card_txt_h">
+                        <h1>프렌즈 체크카드,</h1>
+                        <h1>내가 고르는 선택의 즐거움</h1>
+                    </div>
+                    <div class="card_txt_p">
+                        <p>프렌즈 디자인부터 멋스러운 블랙 컬러 카드까지 원하는 디자인과 기능을 선택할 수 있습니다.</p>
+                    </div>
+                    <div class="card_box">
+                        <a href="#">카카오뱅크 프렌즈 체크카드 ></a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="kakao_it">
+                <h1>IT 기술로 카카오뱅크를<br>
+                    만들어 갑니다.</h1>
+                <span class="cont_bar"></span>
+                <span class="cont_bar_bg"></span>
+                <div class="it_txt_p">
+                    <div class="it_img">
+                        <img src="image/main9.png" alt="">
+                    </div>
+                    <div class="it_box">
+                        <div class="it_txt_box">
+                            <div class="it_txt_list">
+                                <h3>간결하고, 유려하게</h3>
+                                <p>작은 모바일 화면에 적합하도록 </p>
+                                <p>복잡함을 덜어낸</p>
+                                <p>유려하고 친화적인 UX</p>
+                            </div>
+                            <div class="it_txt_list">
+                                <h3>간편한 인증, 철저한 보안</h3>
+                                <p>지문, 비밀번호로 간편한 인증</p>
+                                <p>IT 기술의 강력한 보안 검증과</p>
+                                <p>데이터 암호화</p>
+                            </div>
+                            <div class="it_txt_list"></div>
+                            <div class="it_txt_list">
+                                <h3>Mibile First, One App</h3>
+                                <p>모바일에서 뱅킹이 더 쉽고 편리하게</p>
+                                <p>여러 앱을 설치할 필요 없이</p>
+                                <p>하나의 앱으로</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="it_mobile_box">
+                    <div class="it_mobile">
+                        <img src="image/it_mobile.png" alt="">
+                        <strong>간결하고, 유려하게</strong>
+                        <p>작은 모바일 화면에 적합하도록 <br>
+                        복잡함을 덜어낸 유려하고 친화적인 UX</p>
+                    </div>
+                    <span class="it_shotbar"></span>
+                    <div class="it_mobile">
+                        <img src="image/it_rock.png" alt="">
+                        <strong>간편한 인증, 철저한 보안</strong>
+                        <p>지문, 비밀번호로 간편한 인증 <br>
+                        IT 기술의 강력한 보안 검증과 데이터 암호화</p>
+                    </div>
+                    <span class="it_shotbar"></span>
+                    <div class="it_mobile">
+                        <img src="image/it_bank.png" alt="">
+                        <strong>Mobilr First, One App</strong>
+                        <p>모바일에서 뱅킹이 더 쉽고 편리하게 <br>
+                        여러 앱을 설치할 필요 없이 하나의 앱으로</p>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer_top">
+                <a href="#">모바일뱅킹 서비스 이용약관</a>
+                <span></span>
+                <a href="#">전자금융거래 기본약관</a>
+                <span></span>
+                <a href="#" class="bold">위치기반서비스 이용약관</a>
+                <span></span>
+                <a href="#" class="bold">개인정보처리방침</a>
+                <span></span>
+                <a href="#" class="bold">전자민원접수</a>
+                <span></span>
+                <a href="#">보호금융상품등록부</a>
+                <span></span>
+                <a href="#">상품공시실</a>
+                <span></span>
+                <a href="#">경영공시</a>
+                <span></span>
+                <a href="#">공지사항</a>
+                <br>
+                <a href="#">전자서명인증업무준칙</a>
+                <span></span>
+                <a href="#">카카오뱅크 인증서 서비스 이용약관</a>
+                <span></span>
+                <a href="#" class="bold">카카오뱅크 인증서 서비스 개인정보처리방침</a>
+            </div>
+            <div class="footer_middle">
+                <p>(주)카카오뱅크∙윤호영∙사업자번호 375-88-00197 <strong>대표전화 1599-3333</strong> <span> (해외 +82-2-6420-3333)</span></p>
+                <span>Copyright © KakaoBank Corp. <strong>All rights reserved.</strong></span>
+            </div>
+            <div class="footer_bottom">
+                <div class="f_left">
+                    <a href="#" class="m_none">
+                        <div class="img">
+                            <img src="image/web_wa.png" alt="웹 접근성 품질인증">
+                        </div>
+                        <div class="f_left_txt">
+                            <span>웹 접근성 품질인증</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="img">
+                            <img src="image/web_trust.png" alt="웹 트러스트 인증">
+                        </div>
+                        <div class="f_left_txt">
+                            <span>웹 트러스트 인증</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="f_right">
+                    <a href="#">
+                        <img src="image/icon_face.png" alt="페이스북">
+                    </a>
+                    <a href="#">
+                        <img src="image/icon_instar.png" alt="인스타">
+                    </a>
+                    <a href="#">
+                        <img src="image/icon_youtube.png" alt="유투브">
+                    </a>
+                    <a href="#">
+                        <img src="image/icon_brunch.png" alt="브런치 스토리">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/js/main.js"></script>
+
+
+</body>
+
+</html>

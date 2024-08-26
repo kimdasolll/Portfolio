@@ -1,0 +1,706 @@
+
+.main_warp{
+    min-width: 1020px;
+}
+
+@media (min-width:365px) {
+    .main_warp{
+        min-width: 365px;
+    }
+}
+
+.container{
+    position: relative;
+}
+
+.kakao_main .kakao_box {
+    margin-top: 3%;
+    width: 100vw;
+    height: 720px;
+    background-color: #FFEF6B;
+    max-width: 1200;
+} 
+
+.kakao_main .kakao_box .kakao_img{
+    height: 884px;
+    background-image: url(https://kakaobank.com/static/images/web/renewal/main-bg3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.kakao_main .kakao_box > .kakao_txt{
+    position: absolute;
+    top:200px;
+    left: 20%;
+}
+
+h1{
+    font-size: 42px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.kakao_main .kakao_box .kakao_txt .kakao_p_txt{
+    padding: 15px 0;
+}
+
+.kakao_main .kakao_box .kakao_txt .kakao_p_txt p{
+    padding-top: 10px;
+}
+
+.kakao_main .kakao_box .kakao_txt .kakao_p_txt .p_bottom_txt{
+    padding-top: 15px;;
+}
+
+.kakao_main .kakao_box .kakao_txt .kakao_download{
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.kakao_main .kakao_box .kakao_txt .kakao_download a{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.kakao_main .kakao_box .kakao_txt .kakao_download .down_google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+.kakao_main .kakao_box .kakao_txt .kakao_download .down_app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 40px;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.main_mobile{
+    display: none;
+    text-align: center;
+    background-color: #FFEF6B;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.main_mobile .mobile_box{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main_mobile .mobile_box h2{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+.main_mobile .mobile_box p{
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.main_mobile .mobile_down{
+    display: flex;
+    justify-content: center;
+}
+
+.main_mobile .mobile_down a{
+    width: 80%;
+    max-width: 320px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow:14px 20px 25px 0 rgba(0,0,0,0.16);
+}
+
+.main_mobile img{
+    width: 50%;
+}
+
+.main_mobile .mobile_down img{
+    width: 22px;
+}
+
+@media all and (min-width: 365px) and (max-width: 1024px){
+    .kakao_box{
+        display: none;
+    }
+    .main_mobile{
+        display: block;
+    }
+    .main_mobile .mobile_box h2{
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .main_mobile .mobile_box p{
+        font-size: 14px;
+    }
+    .main_mobile img{
+        width: 340px;
+    }
+    h1{
+        font-size: 28px;
+    }
+}
+
+
+
+.kakao_mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10% ;
+}
+
+.kakao_mobile .mo_img img{
+    width: 473px;
+    margin-right: 50px;
+}
+
+.kakao_mobile .mo_txt{
+    padding-left: 50px;
+}
+
+.kakao_mobile .mo_txt p{
+    padding: 5px 0;
+}
+
+.kakao_mobile .mo_box{
+    padding: 20px 5px;
+}
+
+.kakao_mobile .mo_box a{
+    padding: 20px 35px;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+
+}
+
+
+@media all and (min-width: 365px) and (max-width: 1024px) {
+    .kakao_mobile{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .kakao_mobile .mo_img img{
+        margin-right: 0;
+        width: 300px;
+    }
+    .kakao_mobile .mo_txt{
+        padding-left: 0;
+        margin: 0 20px;
+    }
+}
+
+
+
+.kakao_deposit{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10% ;
+}
+
+.kakao_deposit .deposit_img .p_img{
+    width: 473px;
+    margin-right: 50px;
+}
+
+.kakao_deposit .deposit_txt{
+    padding-left: 50px;
+}
+
+.kakao_deposit .deposit_txt p{
+    padding: 5px 0;
+}
+
+.kakao_deposit .deposit_box{
+    padding: 20px 5px;
+    justify-content: center;
+}
+
+.kakao_deposit .deposit_box a{
+    padding: 20px 35px;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+
+}
+
+.kakao_deposit .deposit_img_box img{
+    width: 440px;
+}
+
+.kakao_deposit .deposit_img .m_img{
+    display: none;
+}
+
+@media all and (min-width: 365px) and (max-width: 1024px) {
+    .kakao_deposit{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .kakao_deposit .deposit_img_box img{
+        display: none;
+    }
+    .kakao_deposit .deposit_box{
+        display: flex;
+        gap: 10px;
+        padding: 20px 0;
+    }
+    .kakao_deposit .deposit_img .p_img{
+        display: none;
+    }
+    .kakao_deposit .deposit_img .m_img{
+        display: block;
+    }
+    .kakao_deposit .deposit_txt{
+        padding-left: 0;
+        margin: 0 20px;
+    }
+}
+
+
+.kakao_team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10% ;
+}
+
+.kakao_team .team_img img{
+    width: 473px;
+    margin-right: 50px;
+}
+
+.kakao_team .team_txt{
+    padding-left: 50px;
+}
+
+.kakao_team .team_txt p{
+    padding: 5px 0;
+}
+
+.kakao_team .team_box{
+    padding: 20px 5px;
+}
+
+.kakao_team .team_box a{
+    padding: 20px 80px;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+
+}
+
+
+@media all and (min-width: 365px) and (max-width: 1024px) {
+    .kakao_team{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .kakao_team .team_img img{
+        width: 268px;
+    }
+    .kakao_team .team_txt{
+        padding-left: 0;
+        margin: 0 20px;
+    }
+}
+
+
+.kakao_meet{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10% ;
+}
+
+.kakao_meet .meet_img img{
+    width: 473px;
+    margin-right: 50px;
+}
+
+.kakao_meet .meet_txt{
+    padding-left: 50px;
+}
+
+.kakao_meet .meet_txt p{
+    padding: 5px 0;
+}
+
+.kakao_meet .meet_box{
+    padding: 20px 5px;
+}
+
+.kakao_meet .meet_box a{
+    padding: 20px 80px;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+
+}
+
+
+@media all and (min-width: 365px) and (max-width: 1024px) {
+    .kakao_meet{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .kakao_meet .meet_img img{
+        width: 351px;
+        margin-right: 0;
+    }
+    .kakao_meet .meet_txt{
+        padding-left: 0;
+        margin: 0 20px;
+    }
+}
+
+
+.kakao_foreign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10% ;
+    background: url(/image/kakao_foreign_backimage.png) no-repeat -12% 50% ;
+}
+
+.kakao_foreign .foreign_img img{
+    width: 473px;
+    margin-right: 50px;
+}
+
+.kakao_foreign .foreign_txt{
+    padding-left: 50px;
+}
+
+.kakao_foreign .foreign_txt p{
+    padding: 5px 0;
+}
+
+.kakao_foreign .foreign_box{
+    padding: 20px 5px;
+}
+
+.kakao_foreign .foreign_box a{
+    padding: 20px 90px;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+}
+
+
+@media all and (min-width: 365px) and (max-width: 1024px) {
+    .kakao_foreign{
+        flex-direction: column-reverse;
+        text-align: center;
+        background: url(/image/kakao_foreign_backimage.png) no-repeat #fff;
+        background-position: center;
+        background-size: 840px auto;
+    }
+    .kakao_foreign .foreign_img img{
+        width: 289px;
+        margin-right: 0;
+    }
+}
+
+
+
+.kakao_time{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10% ;
+    background-color: #333B58;
+    padding-top: 100px;
+}
+
+.kakao_time .time_img img{
+    width: 473px;
+    margin-right: 50px;
+}
+
+.kakao_time .time_txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.kakao_time .time_txt h1{
+    color: #fff;
+}
+
+.kakao_time .time_txt p{
+    color: #fff;
+    padding: 5px 0;
+}
+
+.kakao_time .time_box{
+    padding: 20px 5px;
+}
+
+.kakao_time .time_box a{
+    color: #fff;
+    padding: 20px 35px;
+    border-radius: 10px;
+    background-color: rgba(233, 233, 233, 0.281);
+}
+
+
+@media all and (min-width: 365px) and (max-width: 1024px) {
+    .kakao_time{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .kakao_time .time_txt{
+        padding:30px 5px 10px 10px;
+    }
+    .kakao_time .time_box{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+        gap: 5px;
+        padding: 15px 0;
+    }
+    .kakao_time .time_box a{
+        padding:17px 5px;
+        background-color: rgba(0,0,0,0.1);
+    }
+    .kakao_time .time_img img{
+        width: 290px;
+        margin-right: 0;
+    }
+}
+
+
+
+.kakao_card{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10% ;
+    padding: 100px;
+}
+
+.kakao_card .card_img img{
+    width: 473px;
+    margin-right: 50px;
+}
+
+.kakao_card .card_txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.kakao_card .card_txt h1{
+    text-align: center;
+}
+
+.kakao_card .card_txt p{
+    padding: 5px 0;
+}
+
+.kakao_card .card_box{
+    padding: 20px 5px;
+}
+
+.kakao_card .card_box a{
+    padding: 20px 35px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+}
+
+.kakao_card .card_img{
+    margin-top: 50px;
+    position: relative;
+}
+
+.kakao_card .card_img img{
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.kakao_card .card_img img:not(:nth-child(3)){
+    width: 200px;
+}
+
+.kakao_card .card_img img:first-child{
+    top:70px;
+    right:-40px;
+}
+
+.kakao_card .card_img img:nth-child(2){
+    top:70px;
+    left: 30px;
+}
+
+.kakao_card .card_img img:last-child{
+    top: 20px;
+    right: -190px;
+}
+
+
+
+@media all and (min-width: 365px) and (max-width: 1024px) {
+    .kakao_card{
+        padding: 0;
+    }
+    .kakao_card .card_img{
+        display: none;
+    }
+    .kakao_card .img{
+        margin-top: 20%;
+    }
+    .kakao_card .card_txt{
+        padding-left: 0;
+        margin: 0 20px;
+    }
+}
+
+
+
+.kakao_it{
+    text-align: center;
+    margin-top: 30% ;
+    background-color: #fafafa;
+    position: relative;
+    padding-bottom: 10%;
+}
+
+.kakao_it h1{
+    padding-top: 10%;
+    line-height: 1.35;
+}
+
+.kakao_it .cont_bar{
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #000;
+    margin: 50px auto 140px;
+}
+
+.kakao_it .cont_bar_bg{
+    position: absolute;
+    top: 660px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+} 
+
+.kakao_it .it_txt_p{
+    position: relative;
+    z-index: 10;
+}
+
+.kakao_it .it_img img{
+    width: 1020px;
+}
+
+.kakao_it .it_box{
+    margin: 0 auto;
+}
+
+.kakao_it .it_box .it_txt_box{
+    display: flex;
+    justify-content: center;
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.kakao_it .it_box .it_txt_box >div{
+    width: 25%;
+}
+
+.kakao_it .it_box .it_txt_box >div h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 50px 0 30px;
+}
+
+.kakao_it .it_box .it_txt_box >div p{
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    font-weight: 200;
+}
+
+
+.it_mobile_box{
+    display: none;
+    text-align: center;
+}
+
+.it_mobile_box .it_mobile{
+    text-align: center;
+}
+
+.it_mobile_box .it_mobile strong{
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.it_mobile_box .it_mobile p{
+    font-size: 20px;
+    line-height: 30px;
+    color: #666;
+}
+
+.it_mobile_box .it_shotbar{
+    display: block;
+    width: 350px;
+    height: 1px;
+    background-color: #e6e6e6;
+    margin: 50px auto;
+}
+
+
+@media all and (min-width: 365px) and (max-width: 1024px) {
+    .kakao_it{
+        margin-top: 30%;
+    }
+    .kakao_it .it_txt_p, 
+    .kakao_it .cont_bar_bg{
+        display: none;
+    }
+    .it_mobile_box{
+        display: block;
+    }
+    .kakao_it .cont_bar{
+        margin: 50px auto 60px;
+    }
+    .it_mobile_box .it_mobile strong{
+        font-size: 20px;
+    }
+    .it_mobile_box .it_mobile p{
+        font-size: 16px;
+    }
+}

@@ -197,7 +197,7 @@
 
 
 /* 스킬트리 */
-
+/*
 .skills {
     text-align: center;
     margin: 10% 0 20%;
@@ -219,9 +219,10 @@
     font-size: 20px;
     margin-top: 10px;
 }
-
+*/
 
 /* 반응형 */
+/*
 @media (max-width:1024px) {
     .skills .skills_box .skills_list {
         grid-template-columns: repeat(8, 1fr);
@@ -266,7 +267,7 @@
     }
 }
 
-
+*/
 
 /* 메인 프로젝트 */
 
@@ -729,11 +730,13 @@
     animation: scroll-x var(--duration) linear infinite;
 }
 
+/*
 @media (prefers-reduced-motion: reduce) {
     .marquee__group {
         animation-play-state: paused;
     }
 }
+*/
 
 @keyframes scroll-x {
     from {

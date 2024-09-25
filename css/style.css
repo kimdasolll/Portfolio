@@ -271,7 +271,7 @@
 /* 투썸 */
 
 .atwosome {
-    height: 170vh;
+    height: 160vh;
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -500,7 +500,7 @@
 /* 가네시 */
 
 .ganeshi {
-    height: 225vh;
+    height: 215vh;
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -865,7 +865,7 @@
     }
 
     .sub_box .sub_text {
-        top: 35%;
+        top: 45%;
     }
 
     .sub_box:hover .sub_text {

@@ -72,26 +72,37 @@
 /* 비디오 */
 
 .main_visual {
+    max-width: 1600px;
     margin: 200px 80px 0;
+    padding: 0 4%;
     height: 120vh;
+}
+
+.main_visual h1::before {
+    content: "";
+    display: inline-block;
+    width: 83vw;
+    height: 2px;
+    background-color: #000;
+    margin: 0 0 10%;
 }
 
 .main_visual h1 {
     position: sticky;
     top: 0;
-    border-top: 2px solid #000;
+    /*border-top: 2px solid #000;*/
     font-family: 'Play-R';
-    font-size: 180px;
-    padding: 50px 0;
+    font-size: 7.4rem;
     z-index: -10;
 }
 
 .main_visual video {
     margin-top: 30px;
+    text-align: center;
 }
 
 .main_visual .p_video {
-    width: 91vw;
+    max-width: 1600px;
 }
 
 .m_video {
@@ -130,7 +141,7 @@
 
     .m_video {
         display: block;
-        width: 99vw;
+        width: 85vw;
     }
 }
 
@@ -163,9 +174,9 @@
     height: 50vh;
     text-align: center;
     font-family: 'Chamber-R';
-    font-size: 48px;
+    font-size: 3.5rem;
     position: relative;
-    padding: 10% 0;
+    padding: 20% 0 10%;
 }
 
 .slide .slide_box {
@@ -268,14 +279,18 @@
 
 /* 메인 프로젝트 */
 
+.main_project {
+    padding: 0 8%;
+}
+
 /* 투썸 */
 
 .atwosome {
-    height: 160vh;
+    height: 150vh;
     display: flex;
     justify-content: space-between;
     align-items: start;
-    margin: 50px 0;
+    margin: 30px 0;
 }
 
 .atwosome>div {
@@ -292,17 +307,17 @@
 
 .atwosome .title h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: 46px;
     padding: 10px 60px;
 }
 
 .atwosome .title p {
     font-family: 'Mango';
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .atwosome .title>a>p {
-    font-size: 20px;
+    font-size: 18px;
     margin: 30px 60px;
     text-decoration: underline;
 }
@@ -323,31 +338,31 @@
 /* 반응형 */
 @media (max-width:1024px) {
     .atwosome {
-        height: 110vh;
+        height: 100vh;
     }
 
     .atwosome .title {
         margin-left: 15px;
     }
 
-    .atwosome .title h2{
+    .atwosome .title h2 {
         padding: 0;
         font-size: 40px;
     }
 
-    .atwosome .title p{
+    .atwosome .title p {
         font-size: 15px;
     }
 
     .atwosome .title>a>p {
         font-size: 16px;
         line-height: 20px;
-        margin:20px 50px;
+        margin: 20px 50px;
     }
 
     .atwosome .title>p {
         font-size: 15px;
-        padding:0 20px;
+        padding: 0 20px;
     }
 
     .atwosome .title>p br {
@@ -363,13 +378,16 @@
     .atwosome .title {
         margin-left: 5px;
     }
-    .atwosome .title h2{
+
+    .atwosome .title h2 {
         font-size: 35px;
     }
-    .atwosome .title>a>p{
-        margin:15px 10px;
+
+    .atwosome .title>a>p {
+        margin: 15px 10px;
     }
-    .atwosome .title>p{
+
+    .atwosome .title>p {
         padding: 0px 5px;
     }
 
@@ -389,6 +407,7 @@
         margin-bottom: 20%;
         margin-left: 0;
     }
+
     .atwosome .title>a>p {
         font-size: 15px;
     }
@@ -399,8 +418,16 @@
 }
 
 @media (max-width:365px) {
+    .main_project {
+        padding: 0;
+    }
+
     .atwosome .title {
         font-size: 32px;
+    }
+
+    .atwosome img {
+        width: 95%;
     }
 }
 
@@ -500,7 +527,7 @@
 /* 가네시 */
 
 .ganeshi {
-    height: 215vh;
+    height: 210vh;
     display: flex;
     justify-content: space-between;
     align-items: start;
@@ -522,17 +549,17 @@
 
 .ganeshi .title h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: 46px;
     padding: 10px 60px;
 }
 
 .ganeshi .title p {
     font-family: 'Mango';
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .ganeshi .title>a>p {
-    font-size: 20px;
+    font-size: 18px;
     margin: 30px 60px;
     text-decoration: underline;
 }
@@ -552,18 +579,19 @@
 /* 반응형 */
 @media (max-width:1024px) {
     .ganeshi {
-        height: 150vh;
+        height: 130vh;
     }
 
     .ganeshi .title {
         margin-left: 15px;
     }
-    .ganeshi .title h2{
+
+    .ganeshi .title h2 {
         padding: 0;
         font-size: 40px;
     }
 
-    .ganeshi .title p{
+    .ganeshi .title p {
         font-size: 15px;
     }
 
@@ -571,12 +599,12 @@
         display: block;
         font-size: 16px;
         line-height: 20px;
-        margin:20px 50px;
+        margin: 20px 50px;
     }
 
     .ganeshi .title>p {
         font-size: 15px;
-        padding:0 20px;
+        padding: 0 20px;
     }
 
     .ganeshi .title>p br {
@@ -593,13 +621,16 @@
         font-size: 42px;
         margin-left: 5px;
     }
-    .ganeshi .title h2{
+
+    .ganeshi .title h2 {
         font-size: 35px;
     }
-    .ganeshi .title>a>p{
-        margin:15px 10px;
+
+    .ganeshi .title>a>p {
+        margin: 15px 10px;
     }
-    .ganeshi .title>p{
+
+    .ganeshi .title>p {
         padding: 0px 5px;
     }
 }
@@ -618,7 +649,8 @@
         margin-bottom: 20%;
         margin-left: 0;
     }
-    .ganeshi .title>a{
+
+    .ganeshi .title>a {
         display: block;
     }
 
@@ -635,6 +667,9 @@
 @media (max-width:365px) {
     .ganeshi .title {
         font-size: 32px;
+    }
+    .ganeshi img {
+        width: 95%;
     }
 }
 
@@ -804,10 +839,12 @@
     .marquee__group p {
         line-height: 170px;
     }
+
     .sub_box:hover .sub_text {
         transform: translate(-50%, -330%);
     }
-    .sub_box:hover .sub_rolling{
+
+    .sub_box:hover .sub_rolling {
         top: -30px;
     }
 
@@ -821,9 +858,10 @@
         height: 100px;
     }
 
-    .sub_box .sub_text{
-        transform:translate(-50%, -135%);
+    .sub_box .sub_text {
+        transform: translate(-50%, -135%);
     }
+
     .sub_box p {
         font-size: 35px;
     }

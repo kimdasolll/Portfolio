@@ -245,8 +245,9 @@ section{
 /*-- 푸터 -- */
 
 footer{
-    margin: 0 20px 10px;
-    color: #808080;
+    padding: 60px 100px 70px;
+    background-color: #222222;
+    color: #555;
 }
 
 
@@ -258,17 +259,16 @@ footer{
 
 .corporation{
     display: flex;
-    gap: 20px;
-}
-
-.corporation .corporation_box{
-    width: 50%;
-    display: flex;
-    gap: 200px;
+    justify-content: space-between;
 }
 
 .corporation .home > div{
     margin-bottom: 20px;
+}
+
+
+.clause {
+    margin-top: 50px;
 }
 
 .clause ul{
@@ -327,6 +327,11 @@ footer{
         flex-wrap: wrap;
         gap:30px;
     }
+    .corporation h5{
+        font-family: AppleEB;
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
 }
 @media(max-width:820px){
     .corporation{
@@ -348,6 +353,7 @@ footer{
     }
     .clause ul{
         gap: 10px;
+        font-size: 14px;
     }
     .ceo .ceo_name{
         flex-direction: column;
@@ -369,5 +375,8 @@ footer{
 @media(max-width:480px){
     .corporation h5{
         font-size: 20px;
+    }
+    .clause ul{
+        font-size: 12px;
     }
 }

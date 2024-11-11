@@ -106,10 +106,15 @@ h2::after{
 
 /*----프로모션----*/
 
+.promotion{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 .promotion_h h1{
     text-align: center;
     margin-bottom: 30px;
-
+    font-size: 48px;
 }
 .promotion_box{
     margin: 0 20px;
@@ -118,7 +123,7 @@ h2::after{
 .promotion_box ul{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
 }
 
 .promotion_box ul li img{
@@ -129,7 +134,7 @@ h2::after{
     font-family: AppleB;
     font-size: 36px;
     color: #D50037;
-    margin: 20px 0;
+    margin: 30px 0 10px;
 }
 .promotion_box ul li .text .notice{
     color: #222222;
@@ -137,8 +142,9 @@ h2::after{
 
 .promotion_box ul li .text p{
     font-family: AppleSB;
-    font-size: 24px;
-    line-height: 25px;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing : 2px;
 }
 
 @media (max-width:768px) {
@@ -189,6 +195,10 @@ h2::after{
 
 /*--에이리스트--*/
 
+.alist > div{
+    padding-top: 100px;
+}
+
 .alist img{
     width: 100%;
 }
@@ -211,16 +221,21 @@ h2::after{
 /*-- 메뉴 --*/
 
 .menu{
-    margin-left: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
 }
 
-.menu .menu_box{
+.menu_name{
+    margin: 20px 0 50px;
+}
+
+.menu_name ul{
     display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 120px;
 }
-
-.menu_name{width: 20%;}
-.menu_slide_box{width: 80%;}
 
 .menu_name ul li{
     margin-top: 20px;
@@ -234,7 +249,7 @@ h2::after{
 
 .menu .menu_box .menu_name a{
     font-family: AppleB;
-    font-size: 30px;
+    font-size: 24px;
     margin: 10px 0;
 }
 
@@ -247,6 +262,34 @@ h2::after{
     padding: 15px 35px;
 }
 
+
+/*
+.menu .menu_list_box > div ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu .menu_list_box > div ul li p{
+    margin-top: 10px;
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #D50037;
+    text-underline-offset: 7px;
+}
+*/
+.menu .menu_list_box .menu_dessert, .menu .menu_list_box .menu_deli{
+    margin-bottom: 20px;
+}
+
+.menu .menu_list_box img{
+    width: 80%;
+}
+
+
+
 .menu .menu_box .menu_slide_box p{
     font-size: 20px;
     padding: 13px 0;
@@ -255,6 +298,7 @@ h2::after{
     text-decoration-color: #D50037;
     text-underline-offset: 5px;
 }
+
 
 @media(max-width:1024px){
     .menu .menu_box .menu_name a{
@@ -278,13 +322,17 @@ h2::after{
     .menu .menu_box .menu_name ul{
         display: flex;
         align-items: center;
+        gap: 30px;
     }
     .menu .menu_box .menu_name ul li{
         margin-right: 20px
     }
+    
+    /*
     .menu_slide_box{
         width: 100%;
-    }
+    }*/
+
 }
 @media(max-width:480px){
     h1{
@@ -297,9 +345,12 @@ h2::after{
         font-size: 12px;
         padding: 10px 25px;
     }
+
+    /*
     .menu .menu_box .menu_slide_box p{
         font-size: 14px;
     }
+        */
     .menu_name ul li{
         margin-top: 0;
     }
@@ -309,7 +360,7 @@ h2::after{
 /* 어플 다운로드 */
 
 .application{
-    margin: 0 20px 200px;
+    margin: 0 100px 200px;
 }
 
 .app_box{
@@ -332,12 +383,12 @@ h2::after{
 
 .app_box .app_txt_box .app_txt p{
     font-family: AppleSB;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 40px;
 }
 
 .app_box .app_txt_box .app_txt strong{
-    font-size: 32px;
+    font-size: 30px;
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-decoration-color: #D50037;
@@ -346,14 +397,14 @@ h2::after{
 
 .app_box .app_txt_box .app_txt h3{
     font-family: AppleB;
-    font-size: 32px;
+    font-size: 28px;
     padding: 30px 0;
 }
 
 .app_box .app_txt_box .app_down_code{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 
 .app_box .app_txt_box .app_down_code div{
@@ -366,12 +417,12 @@ h2::after{
     color: #fff;
 }
 .app_box .app_txt_box .app_down_code .app_google{
-    width: 40%;
+    width: 35%;
     padding: 22px 0 ;
     cursor: pointer;
 }
 .app_box .app_txt_box .app_down_code .app_ico{
-    width: 40%;
+    width: 35%;
     padding: 22px 0 ;
     cursor: pointer;
 }
@@ -495,7 +546,7 @@ h2::after{
 /*-- 브랜드 서폿 --*/
 
 .brand{
-    margin: 0 20px 200px;
+    margin: 0 100px 200px;
 }
 
 h4{
@@ -559,6 +610,7 @@ h4::after{
 .brand_list_box .store_box div p{
     font-size: 20px;
     line-height: 30px;
+    margin-top: 14px;
 }
 
 .brand_list_box .store_box div .icon{
@@ -595,7 +647,7 @@ h4::after{
 
 .brand_swiper p{
     font-family: AppleSB;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 25px;
     margin-top: 20px;
     color: #fff;
@@ -603,7 +655,7 @@ h4::after{
 
 .swiper_text{
     position: absolute;
-    top: 30%;
+    top: 10%;
     left: 5%;
     text-align: start;
 }
@@ -638,6 +690,15 @@ h4::after{
         width: 10px;
         height: 10px;
     }
+    .brand_list_box .store_box h4{
+        font-size: 24px;
+    }
+    .brand_list_box .store_box div p{
+        font-size: 16px;
+    }
+    .brand_list_box .store_box div .icon img{
+        width: 80%;
+    }
 }
 
 @media(max-width:480px){
@@ -659,14 +720,14 @@ h4::after{
         line-height: 20px;
     }
     .brand_list_box .store_box h4{
-        font-size: 24px;
+        font-size: 20px;
     }
     .brand_list_box .store_box > div{
         padding: 30px 30px 35px;
     }
     .brand_list_box .store_box div p{
         margin-top: 10px;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 20px;
     }
 }
